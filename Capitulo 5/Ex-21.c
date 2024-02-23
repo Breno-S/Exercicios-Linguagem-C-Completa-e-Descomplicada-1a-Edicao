@@ -19,7 +19,7 @@ int main() {
         );
         scanf("%u", &qtd);
 
-        while ((c= getchar()) != '\n' && c != EOF) {}
+        while ((c = getchar()) != '\n' && c != EOF) {}
     } while (qtd < 1);
 
     printf("\n");
@@ -27,7 +27,7 @@ int main() {
     printf("#1: ");
     scanf("%d", &num);
 
-    while ((c= getchar()) != '\n' && c != EOF) {}
+    while ((c = getchar()) != '\n' && c != EOF) {}
     
     maior = num;
 

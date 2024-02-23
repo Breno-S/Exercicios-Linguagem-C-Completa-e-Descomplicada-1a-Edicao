@@ -22,7 +22,7 @@ int main() {
         
         // Limpar o '\n' e qualquer outro lixo restante no buffer de entrada
         // padrão (a.k.a. stdin).
-        char c;
+        int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 

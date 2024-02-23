@@ -17,7 +17,7 @@ int main() {
     maior = menor = num;
 
     // Limpar o stdin
-    char c;
+    int c;
     while ((c = getchar()) != '\n' && c != EOF) {}
 
     for (int i = 1; i < QTD_NUMS; i++) {
@@ -32,7 +32,6 @@ int main() {
         }
 
         // Limpar o stdin
-        char c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 
