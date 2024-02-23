@@ -6,7 +6,7 @@ e imprima sua média. */
 #define QTD_NUMS 10
 
 int main() {
-    int		num;
+    int		num = 0;
     double	media;
 
     printf(

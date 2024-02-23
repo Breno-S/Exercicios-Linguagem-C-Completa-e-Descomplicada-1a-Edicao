@@ -40,9 +40,9 @@ código propositalmente.
 #include <time.h>
 
 int main() {
-    signed char contagem = 10;
-    time_t      referencia = time(NULL),
-                agora;
+    char    contagem = 10;
+    time_t  referencia = time(NULL),
+            agora;
 
     while (contagem >= 0) {
         agora = time(NULL);

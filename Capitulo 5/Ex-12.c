@@ -5,7 +5,7 @@ divisores do número 66 é 1 + 2 + 3 + 6 + 11 + 22 + 33 = 78. */
 #include <stdio.h>
 
 int main() {
-    int	num,
+    int	num = 0,
         soma = 0;
 
     printf("Informe um numero inteiro: ");

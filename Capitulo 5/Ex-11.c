@@ -4,11 +4,16 @@ Exemplo: os divisores do número 66 são: 1, 2, 3, 6, 11, 22, 33 e 66. */
 #include <stdio.h>
 
 int main() {
-    unsigned num;
+    unsigned num = 0;
 
-    printf("Informe um numero inteiro e positivo: ");
-    scanf("%u", &num);
+    do {
+        printf("Informe um numero inteiro e positivo: ");
+        scanf("%u", &num);
 
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF) {}
+    } while (num < 0);
+    
     printf("\n");
     
     if (num == 0) {

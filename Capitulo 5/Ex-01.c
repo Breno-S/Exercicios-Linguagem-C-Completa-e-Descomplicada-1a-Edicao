@@ -21,8 +21,7 @@ int main() {
     scanf("%llu", &num);
 
     printf("\n");
-
-    for (unsigned long long i = 0; i <= num; i++) {
+    for (size_t i = 0; i <= num; i++) {
         printf("%llu ", i);
     }
 
