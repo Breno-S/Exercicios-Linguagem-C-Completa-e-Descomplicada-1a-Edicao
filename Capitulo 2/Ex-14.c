@@ -2,7 +2,6 @@
 imprima um em cada linha. Use um único comando printf() para isso. */
 
 /*
-
 Neste exercício notamos os problemas de obter valores pelo teclado de forma
 consecutiva. As funções de leitura de caractere obtêm o primeiro caractere do
 buffer de entrada e não limpam o resto dele. Dessa forma, qualquer caractere
@@ -18,9 +17,8 @@ solução mais portátil para limpar o buffer de entrada é a seguinte:
     while ( (c = getchar()) != '\n' && c != EOF) {}
 
 Resumidamente, este código cria um loop sem bloco de execução que simplesmente
-"recolhe" os caracteres do buffer até que encontre o fim da string ('\n') ou o
-fim do arquivo (EOF).
-
+"recolhe" os caracteres do buffer até que encontre o caractere de nova linha
+('\n') ou o fim do arquivo (EOF).
 */
 
 #include <stdio.h>
