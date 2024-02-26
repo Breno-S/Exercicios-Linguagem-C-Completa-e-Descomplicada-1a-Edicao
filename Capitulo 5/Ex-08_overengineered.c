@@ -40,7 +40,7 @@
 
 /**************************** DECLARANDO FUNÇÕES ******************************/
 
-// Checa se a string é um número inteiro.
+// Checa se a string representa um número inteiro.
 int check_int(char *);
 
 
