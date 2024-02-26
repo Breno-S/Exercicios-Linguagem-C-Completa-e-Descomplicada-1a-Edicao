@@ -2,7 +2,7 @@
 se o número fornecido é primo ou não. */
 
 /* 
-Busquei criar um algoritmo juntando ideias que eu ja tinha usado com outras
+Busquei criar um algoritmo juntando ideias que eu já tinha usado com outras
 que eu achei na internet, baseadas em algoritmos tradicionais como os crivos.
 */
 
