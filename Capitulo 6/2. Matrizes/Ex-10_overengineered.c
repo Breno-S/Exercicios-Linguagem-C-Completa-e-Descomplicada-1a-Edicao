@@ -7,33 +7,44 @@ alunos cuja pior nota foi na prova 3. */
 Este algoritmo resolve o problema que ocorre quando duas ou mais notas são
 iguais. Agora quando duas ou tres notas são iguais, não se acumula mais no 
 contador da primeira pior nota, mas em um contador para as notas específicas.
-
-Código numérico utilizado:
-
-001 = 1 = primeira
-010 = 2 = segunda
-100 = 4 = terceira
-011 = 3 = primeira e segunda
-101 = 5 = primeira e terceira
-110 = 6 = segunda e terceira
-111 = 7 = tudo igual 
 */
 
 #include <stdio.h>
 
 #define NUM_ALUNOS 10
 
+// Código numérico que indica a combinação.
+enum Combinacoes {
+    PRIMEIRA = 1,           // 1 = 001 = primeira
+    SEGUNDA,                // 2 = 010 = segunda
+    PRIMEIRA_E_SEGUNDA,     // 3 = 011 = primeira e segunda
+    TERCEIRA,               // 4 = 100 = terceira
+    PRIMEIRA_E_TERCEIRA,    // 5 = 101 = primeira e terceira
+    SEGUNDA_E_TERCEIRA,     // 6 = 110 = segunda e terceira
+    TODAS                   // 7 = 111 = tudo igual 
+} flag_piores_notas;
+
 int main() {
-    short           notas[NUM_ALUNOS][3] = { 0 },
+    // Matriz que armazena as notas dos alunos.
+    short notas[NUM_ALUNOS][3] = { 0 };
 
-                    count_pior_1 = 0,
-                    count_pior_2 = 0,
-                    count_pior_3 = 0,
-                    count_pior_1_2 = 0,
-                    count_pior_1_3 = 0,
-                    count_pior_2_3 = 0,
-                    count_pior_all = 0;
+    // Array que armazena as flags de cada aluno.
+    unsigned char piores_notas[NUM_ALUNOS] = { 0 };
 
+    // Valor da pior nota.
+    short pior_nota;
+
+    // Contadores para cada nota
+
+    short   count_pior_1 = 0,
+            count_pior_2 = 0,
+            count_pior_3 = 0,
+            count_pior_1_2 = 0,
+            count_pior_1_3 = 0,
+            count_pior_2_3 = 0,
+            count_pior_all = 0;
+
+    // Inserção das notas
     printf("Informe as notas dos alunos:\n");
 
     for (int i = 0; i < NUM_ALUNOS; i++) {
@@ -48,15 +59,13 @@ int main() {
         }
     }
 
-    // Array para as flags de cada aluno.
-    unsigned char 	piores_notas[NUM_ALUNOS] = { 0 };
-
-    short           pior_nota;
+    // Calculo das piores notas
 
     for (int i = 0; i < NUM_ALUNOS; i++) {
         // Define a primeira nota como a pior
         pior_nota = notas[i][0];
-        piores_notas[i] = 1;    // 1 = 001
+
+        piores_notas[i] = PRIMEIRA;    // 1 = 001
         
         for (int j = 1; j < 3; j++) {
 
@@ -65,19 +74,18 @@ int main() {
                 pior_nota = notas[i][j];
                 
                 if (j == 1) {
-                    piores_notas[i] = 2;    // muda para a segunda (010)
+                    piores_notas[i] = SEGUNDA;      // muda para a segunda
                 } else {
-                    piores_notas[i] = 4;    // muda para a terceira (100)
+                    piores_notas[i] = TERCEIRA;     // muda para a terceira
                 }
             }
             
             // Se encontrou uma nota igual à pior
             else if (notas[i][j] == pior_nota) {
                 if (j == 1) {
-                    piores_notas[i] |= 2;   // também a registra (011)
+                    piores_notas[i] |= SEGUNDA;     // adiciona a segunda
                 } else {
-                    piores_notas[i] |= 4;   // também a registra
-                                            // (101 ou 110 ou 111)
+                    piores_notas[i] |= TERCEIRA;    // adiciona a terceira
                 }
             }
         }
@@ -89,34 +97,34 @@ int main() {
 
     for(int i = 0; i < NUM_ALUNOS; i++) {
         switch(piores_notas[i]) {
-            case 1:
+            case PRIMEIRA:
                 count_pior_1++;
                 total_1++;
                 break;
-            case 2:
+            case SEGUNDA:
                 count_pior_2++;
                 total_2++;
                 break;
-            case 4:
+            case TERCEIRA:
                 count_pior_3++;
                 total_3++;
                 break;
-            case 3:
+            case PRIMEIRA_E_SEGUNDA:
                 count_pior_1_2++;
                 total_1++;
                 total_2++;
                 break;
-            case 5:
+            case PRIMEIRA_E_TERCEIRA:
                 count_pior_1_3++;
                 total_1++;
                 total_3++;
                 break;
-            case 6:
+            case SEGUNDA_E_TERCEIRA:
                 count_pior_2_3++;
                 total_2++;
                 total_3++;
                 break;
-            case 7:
+            case TODAS:
                 count_pior_all++;      
                 total_1++;
                 total_2++;
