@@ -14,7 +14,7 @@ contador da primeira pior nota, mas em um contador para as notas específicas.
 #define NUM_ALUNOS 10
 
 // Código numérico que indica a combinação.
-enum Combinacoes {
+enum {
     PRIMEIRA = 1,           // 1 = 001 = primeira
     SEGUNDA,                // 2 = 010 = segunda
     PRIMEIRA_E_SEGUNDA,     // 3 = 011 = primeira e segunda
@@ -22,7 +22,7 @@ enum Combinacoes {
     PRIMEIRA_E_TERCEIRA,    // 5 = 101 = primeira e terceira
     SEGUNDA_E_TERCEIRA,     // 6 = 110 = segunda e terceira
     TODAS                   // 7 = 111 = tudo igual 
-} flag_piores_notas;
+};
 
 int main() {
     // Matriz que armazena as notas dos alunos.
