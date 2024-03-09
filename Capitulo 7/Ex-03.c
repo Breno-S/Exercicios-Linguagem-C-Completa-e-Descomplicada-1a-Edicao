@@ -4,7 +4,7 @@ quantos caracteres ela possui. */
 /* 
 Perceba que o tamanho da string é sempre 1 caractere maior que o digitado (ou 31
 se você digitou mais que o limite da variável). Isso ocorre por que a função
-`fgets()` lê o até o caractere '\0' (incluindo o '\n' quando aperta-se ENTER) ou
+`fgets()` lê até o caractere '\0' (incluindo o '\n' quando aperta-se ENTER) ou
 até atingir `tamanho-1`.
 */
 
