@@ -14,10 +14,10 @@
  *                                                                            *
  * Ex: "./programa.exe 111111111111111111 -111111111111111111"                *
  *                                                                            * 
- * A média é representada como long double, para que haja menos erros de      *
- * representação. Se a média impressa for sempre 0, então a função printf()   *
- * sendo utilizada não implementa long double. Se estiver utilizando mingw,   *
- * siga as instruções na linha 97 para resolver este problema.                *
+ * A média é representada como long double para que haja menos erros de       *
+ * representação. Se no seu computador a média impressa for sempre 0, então a *
+ * função printf() sendo utilizada não implementa long double. Se você estiver*
+ * utilizando mingw, siga as instruções na linha 97 para resolver o problema. *
  *                                                                            *
  ******************************************************************************/
 
