@@ -7,7 +7,7 @@ floating-point, as comparações não funcionariam corretamente 100% das vezes.
 Isso ocorre porque a representação de números fracionários em binário na verdade
 não corresponde exatamente ao número que se deseja armazenar, mas a uma
 aproximação dele. Assim, sempre haverá nas casas mais à direita algarismos
-estranhos provenientes dessa aproximação;
+estranhos provenientes dessa aproximação.
 */
 
 #include <stdio.h>
