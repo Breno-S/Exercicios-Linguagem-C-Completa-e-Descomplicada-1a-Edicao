@@ -16,8 +16,9 @@
  *                                                                            * 
  * A média é representada como long double para que haja menos erros de       *
  * representação. Se no seu computador a média impressa for sempre 0, então a *
- * função printf() sendo utilizada não implementa long double. Se você estiver*
- * utilizando mingw, siga as instruções na linha 97 para resolver o problema. *
+ * função printf() sendo utilizada não implementa long double. Se você        *
+ * estiver utilizando mingw, siga as instruções na linha 96 para resolver o   *
+ * problema.                                                                  *
  *                                                                            *
  ******************************************************************************/
 
