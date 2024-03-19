@@ -53,12 +53,14 @@ int main() {
     // Descomente esta linha se somente 0 é impresso e estiver utilizando minGW
     // __mingw_printf("E = %.20Lf", result); 
 
-    // Alternativamente, você pode compilar o programa com a opção
-    // -D__USE_MINGW_ANSI_STDIO (caso esteja usando o minGW).
+    /*
+    Alternativamente, você pode compilar o programa com a opção
+    -D__USE_MINGW_ANSI_STDIO (caso esteja usando o minGW). Ex: 
+    
+    gcc Ex-20.c -D__USE_MINGW_ANSI_STDIO
 
-    // Ex: 
-    // gcc Ex-20.c -D__USE_MINGW_ANSI_STDIO
-
-    // Como último recurso, copie e cole no https://www.onlinegdb.com/
+    Como último recurso, copie e cole no https://www.onlinegdb.com/
+    */
+    
     return 0;
 }
