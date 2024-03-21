@@ -6,7 +6,7 @@ possui a maior média geral dentre os cinco. */
 
 #include <stdio.h>
 
-#define QTD_ALUNOS 3
+#define QTD_ALUNOS 5
 
 struct Aluno {
     unsigned matricula;
