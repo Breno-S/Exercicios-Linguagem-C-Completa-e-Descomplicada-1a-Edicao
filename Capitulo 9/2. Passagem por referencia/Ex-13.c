@@ -20,9 +20,11 @@ void ordenar_array(int *array, size_t tamanho) {
             }
         }
 
-        int temp = array[i];
-        array[i] = array[i_menor];
-        array[i_menor] = temp;
+		if (i_menor != i) {
+			int temp = array[i];
+			array[i] = array[i_menor];
+			array[i_menor] = temp;
+		}
     }
 }
 
