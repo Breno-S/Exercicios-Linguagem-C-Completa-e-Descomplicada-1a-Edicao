@@ -17,12 +17,12 @@ int main() {
     }
 
     // Bubble Sort (ineficiente)
-    for (char i = 0; i < 10; i++) {
-        for (char j = i+1; j < 10; j++) {
-            if (vetor[i] > vetor[j]) {
+    for (char i = 0; i < 9; i++) {
+        for (char j = 0; j < 9 - i; j++) {
+            if (vetor[j] > vetor[j+1]) {
                 float temp = vetor[j];
-                vetor[j] = vetor[i];
-                vetor[i] = temp;
+                vetor[j] = vetor[j+1];
+                vetor[j+1] = temp;
             }
         }
     }
