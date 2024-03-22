@@ -3,7 +3,8 @@ retorne a soma dos seus elementos. */
 
 #include <stdio.h>
 
-#define SIZE 10 // Mude isso se não quiser digitar 100 elementos
+// Mude isso se não quiser digitar 100 elementos
+#define SIZE 10
 
 int soma_matriz(int matriz[SIZE][SIZE]) {
     int s = 0;
