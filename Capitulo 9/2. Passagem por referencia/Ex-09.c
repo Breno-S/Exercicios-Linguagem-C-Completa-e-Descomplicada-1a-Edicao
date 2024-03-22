@@ -16,7 +16,7 @@ struct Aluno {
 
 int indice_melhor_media(struct Aluno *alunos, size_t quantidade) {
     // Define o primeiro aluno como possuidor da maior média
-    unsigned indice_maior_media = 0;
+    size_t indice_maior_media = 0;
 
     // Define a maior media como a do primeiro aluno
     double maior_media = (alunos[0].nota1 + alunos[0].nota2 +
