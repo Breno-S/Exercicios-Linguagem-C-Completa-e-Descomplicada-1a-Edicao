@@ -13,20 +13,20 @@ A variável a tem de ser diferente de zero. Caso seja igual, imprima a mensagem
 #include <math.h>
 
 int main() {
-    short int   a, b, c;
+    double  a, b, c;
 
-    double      delta,
-                raiz_unica,
-                raiz1, raiz2;
+    double  delta,
+            raiz_unica,
+            raiz1, raiz2;
 
     printf("Coeficiente a: ");
-    scanf("%hd", &a);
+    scanf("%lf", &a);
 
     printf("Coeficiente b: ");
-    scanf("%hd", &b);
+    scanf("%lf", &b);
 
     printf("Coeficiente c: ");
-    scanf("%hd", &c);
+    scanf("%lf", &c);
 
     delta = b * b - 4 * a * c;
 
