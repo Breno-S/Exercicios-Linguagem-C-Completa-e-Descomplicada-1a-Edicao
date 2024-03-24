@@ -34,7 +34,7 @@ int main() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF) {}
 
-    printf("Informe o exponente: ");
+    printf("Informe o expoente: ");
     scanf("%d", &exp);
 
     printf("%d ^ %d = %f", base, exp, my_pow(base,exp));
