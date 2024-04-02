@@ -12,7 +12,7 @@ offset na comparação, isto é, onde a semelhança com a string 2 começa na st
 #include <stdbool.h>    // Define 4 macros para implementar booleanos
 
 int main() {
-    char 	str1[64],
+    char    str1[64],
             str2[64];
 
     short   tamanho1 = 0,
