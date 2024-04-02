@@ -12,7 +12,7 @@ offset na comparação, isto é, onde a semelhança com a string 2 começa na st
 #include <stdio.h>
 
 int main() {
-    char 	str1[64],
+    char    str1[64],
             str2[64];
 
     short   tamanho1 = 0,
