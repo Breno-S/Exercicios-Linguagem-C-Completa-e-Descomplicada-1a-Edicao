@@ -70,11 +70,9 @@ int main() {
                             qtd_corresp++;
                             break;
                         }
-                    }
-
-                    // Caso pare de haver igualdade entre as strings, sai do
-                    // loop e continua procurando no resto da string 1
-                    else {
+                    } else {
+                        // Caso pare de haver igualdade entre as strings, sai do
+                        // loop e continua procurando no resto da string 1
                         break;
                     }
                 }
