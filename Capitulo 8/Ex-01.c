@@ -11,7 +11,7 @@ struct Pessoa {
 };
 
 int main() {
-    struct Pessoa p1 = {{'\0'}, 0, {'\0'}};
+    struct Pessoa p1 = { 0 };
 
     printf("Informe o seu nome: ");
     fgets(p1.nome, 64, stdin);
