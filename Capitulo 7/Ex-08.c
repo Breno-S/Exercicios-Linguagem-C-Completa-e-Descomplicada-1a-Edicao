@@ -51,7 +51,7 @@ int main() {
         tamanho2--;
     }
 
-    if (tamanho1 > 0 && tamanho2 > 0) {
+    if (tamanho2 > 0 && tamanho1 >= tamanho2) {
 
         // Procura por matches a partir de todos os caracteres matematicamente
         // possíveis de se encontrar
