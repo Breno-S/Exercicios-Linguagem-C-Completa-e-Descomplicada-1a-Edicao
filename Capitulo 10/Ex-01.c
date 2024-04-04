@@ -2,10 +2,10 @@
 endereços e exiba o maior endereço */
 
 /*
-O endereço da primeira variável é maior que o da segunda e a diferença entre
-eles é igual ao tamanho da variável. Isso ocorre porque as variáveis locais são
-alocadas na porção de memória chamada stack, que na maioria das arquiteturas
-'cresce' do maior endereço de memória para o menor.
+Variáveis locais são alocadas no stack frame de sua respectiva função conforme
+foram declaradas, entretanto a ordem pode variar com a arquitetura de cada
+computador. Logo, só é possível afirmar que a diferença entre os endereços será
+igual ao tamanho da variável (int).
 */
 
 #include <stdio.h>
