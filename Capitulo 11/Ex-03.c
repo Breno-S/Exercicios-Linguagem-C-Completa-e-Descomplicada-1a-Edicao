@@ -63,9 +63,7 @@ struct Cadastro *cadastrar(unsigned N) {
     // Alocação de memória para o array de cadastros
     cadastros = calloc(N, sizeof(struct Cadastro));
 
-    if (cadastros == NULL) {
-        return NULL;
-    }
+    if (cadastros == NULL) return NULL; 
 
     // Leitura de dados para cada cadastro do array
     ler_cadastros(cadastros, N);

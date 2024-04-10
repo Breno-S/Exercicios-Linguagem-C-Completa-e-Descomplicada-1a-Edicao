@@ -16,17 +16,16 @@ int *produto_matriz_vetor(int *A, int *B, size_t N) {
     int *C = malloc(sizeof *C * N),
          soma = 0;
 
-    if (C == NULL) {
-        return NULL;
-    }
+    if (C != NULL) {
 
-    // i = linha da matriz
-    for (size_t i = 0; i < N; i++) {
-        soma = 0;
+        // i = linha da matriz
+        for (size_t i = 0; i < N; i++) {
+            soma = 0;
 
-        // j = coluna da matriz, elemento do array
-        for (size_t j = 0; j < N; j++) {
-            soma += A[i * N + j] * B[j];
+            // j = coluna da matriz, elemento do array
+            for (size_t j = 0; j < N; j++) {
+                soma += A[i * N + j] * B[j];
+            }
 
             C[i] = soma;
         }

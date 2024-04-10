@@ -4,8 +4,8 @@ produto da multiplicação da matriz A pela matriz B. Se a multiplicação das
 matrizes não for possível, retorne um ponteiro nulo. */
 
 /*
-A função poderia ser decomposta em diversas subrotinas, mas para manter como o
-enunciado pede, mantive tudo numa só.
+O programa poderia ser decomposto em diversas subrotinas, mas evitei fazer isso
+para deixar a função pedida pelo enunciado em evidência.
 */
 
 #include <stdio.h>
@@ -151,18 +151,12 @@ int **produto_matrizes(int *A, size_t A_lin, size_t A_col,
     int **C,
           soma;
 
-    if (A_col != B_lin) {
-        return NULL;
-    }
+    if (A_col != B_lin) return NULL;
     
     // Alocação da matriz produto 'C'
-    if ((C = calloc(A_lin, sizeof *C)) == NULL) {
-        return NULL;
-    }
+    if ((C = calloc(A_lin, sizeof *C)) == NULL) return NULL;
 
-    if ((C[0] = calloc(A_lin * B_col, sizeof **C)) == NULL) {
-        return NULL;
-    }
+    if ((C[0] = calloc(A_lin * B_col, sizeof **C)) == NULL) return NULL;
 
     for (int i = 1; i < A_lin; i++) {
         C[i] = C[0] + i * B_col;

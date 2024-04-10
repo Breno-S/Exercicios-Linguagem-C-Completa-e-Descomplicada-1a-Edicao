@@ -61,9 +61,9 @@ int **heap_matriz_quad_int(unsigned N) {
                 matriz[i] = matriz[0] + i * N;
             }
         }
-    }
 
-    diagonal_secundaria_fill(*matriz, N);
+        diagonal_secundaria_fill(*matriz, N);
+    }
 
     return matriz;
 }
