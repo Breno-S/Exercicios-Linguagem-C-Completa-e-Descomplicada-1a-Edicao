@@ -2,10 +2,10 @@
 mensagem informando se a segunda string lida está contida dentro da primeira. */
 
 /*
-Este exemplo é case-sensitive. O contador `i` é usado no index da string 1, o
-contador `j` é usado no index da string 2 e o contador `k` é utilizado como
-offset na comparação, isto é, onde a semelhança com a string 2 começa na string
-1.
+Este exemplo é case-sensitive e conta os casos de strings sobrepostas (ex: 'ana'
+ocorre 2 vezes em 'banana'). O contador `i` é usado no index da string 1, o
+contador `j` no index da string 2 e o contador `k` é utilizado como offset na
+comparação, isto é, onde a semelhança com a string 2 começa na string 1.
 */
 
 #include <stdio.h>
