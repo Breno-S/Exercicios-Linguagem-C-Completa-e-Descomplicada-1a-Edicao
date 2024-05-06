@@ -9,7 +9,7 @@ int main() {
 
     scanf("%c", &caractere);
 
-    printf("\"%c\"", caractere);
+    printf("\"%c\"\n", caractere);
 
     return 0;
 }

@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &primeiro_numero);
     scanf("%d", &segundo_numero);
 
-    printf("%d %d", segundo_numero, primeiro_numero);
+    printf("%d %d\n", segundo_numero, primeiro_numero);
 
     return 0;
 }

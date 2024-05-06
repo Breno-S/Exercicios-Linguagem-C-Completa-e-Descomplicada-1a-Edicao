@@ -8,7 +8,7 @@ int main() {
 
     scanf("%c", &caractere);
 
-    printf("%c", caractere);
+    printf("%d\n", caractere);
 
     return 0;
 }

@@ -9,7 +9,7 @@ int main() {
     scanf("%lf", &numero_double);
 
     // %e para exibir como notação científica
-    printf("%e", numero_double);
+    printf("%e\n", numero_double);
 
     return 0;
 }

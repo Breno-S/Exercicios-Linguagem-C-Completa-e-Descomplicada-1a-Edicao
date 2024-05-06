@@ -8,7 +8,7 @@ int main() {
 
     scanf("%d", &numero_inteiro);
 
-    printf("Valor lido: %d", numero_inteiro);
+    printf("Valor lido: %d\n", numero_inteiro);
 
     return 0;
 }

@@ -7,7 +7,7 @@ int main() {
 
     scanf("%d", &numero_inteiro);
 
-    printf(numero_inteiro);
+    printf("%d\n", numero_inteiro);
 
     return 0;
 }

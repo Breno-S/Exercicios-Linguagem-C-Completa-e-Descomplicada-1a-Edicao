@@ -6,7 +6,7 @@ Use o comando const. Imprima essa constante. */
 int main() {
     const int LADOS_QUADRADO = 4;
 
-    printf("%d", LADOS_QUADRADO);
+    printf("%d\n", LADOS_QUADRADO);
 
     return 0;
 }

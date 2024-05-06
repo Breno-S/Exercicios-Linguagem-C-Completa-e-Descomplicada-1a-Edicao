@@ -6,7 +6,7 @@ Use o comando #define. Imprima essa constante. */
 #define EULER 2.71828F // F no final indica que o literal é float e não double
 
 int main() {
-    printf("%f", EULER);
+    printf("%f\n", EULER);
 
     return 0;
 }

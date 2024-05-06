@@ -9,7 +9,7 @@ int main() {
     scanf("%f", &numero_float);
 
     // print usando o placeholder "%d" no tipo float
-    printf("Valor lido: %d", numero_float);
+    printf("Valor lido: %d\n", numero_float);
 
     return 0;
 }

@@ -18,7 +18,7 @@ int main() {
     printf("Ano: ");
     scanf("%hu", &ano);
 
-    printf("\n%hu/%hu/%hu", dia, mes, ano);
+    printf("\n%.2hu/%.2hu/%.4hu\n", dia, mes, ano);
 
     return 0;
 }

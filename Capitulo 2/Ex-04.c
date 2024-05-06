@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &numero_inteiro);
 
     // print usando o placeholder "%f" no tipo int
-    printf("Valor lido: %f", numero_inteiro);
+    printf("Valor lido: %f\n", numero_inteiro);
 
     return 0;
 }

@@ -18,7 +18,11 @@ int main() {
 
     scanf("%c %d %f", &caractere, &inteiro, &real);
 
-    printf("%c %d %f", caractere, inteiro, real);
+    printf("\n%c %d %f", caractere, inteiro, real);
+
+    printf("\n%c\t%d\t%f", caractere, inteiro, real);
+
+    printf("\n%c\n%d\n%f\n", caractere, inteiro, real);
 
     return 0;
 }
