@@ -15,7 +15,7 @@ int main() {
 
     angulo_rad = angulo_graus * PI / 180;
 
-    printf("%.1f graus = %f rad", angulo_graus, angulo_rad);
+    printf("%.1f graus = %f rad\n", angulo_graus, angulo_rad);
 
     return 0;
 }

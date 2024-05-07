@@ -21,7 +21,7 @@ int main() {
 
     volume = PI * (raio * raio) * altura;
 
-    printf("Volume = %f", volume);
+    printf("\nVolume = %f\n", volume);
 
     return 0;
 }

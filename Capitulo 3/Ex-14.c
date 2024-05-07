@@ -13,7 +13,7 @@ int main() {
     // 32 = distância entre uma letra maiuscula e sua minúscula na tabela ASCII
     letra_minuscula = letra_maiuscula + 32; 
 
-    printf("%c", letra_minuscula);
+    printf("%c\n", letra_minuscula);
 
     return 0;
 }
@@ -40,7 +40,7 @@ int main() {
 
     letra_minuscula = (char) (letra_maiuscula | 32); 
 
-    printf("%c", letra_minuscula);
+    printf("%c\n", letra_minuscula);
 
     return 0;
 }

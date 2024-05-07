@@ -10,7 +10,7 @@ int main() {
 
     soma = a + b + c;
 
-    printf("%d", soma);
+    printf("\n%d\n", soma);
 
     return 0;
 }

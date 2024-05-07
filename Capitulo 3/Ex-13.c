@@ -19,8 +19,7 @@ int main() {
 
     hipotenusa = sqrt((pow(cateto_a, 2) + pow(cateto_b, 2)));
 
-    printf("\n");
-    printf("Hipotenusa = %f", hipotenusa);
+    printf("\nHipotenusa = %f\n", hipotenusa);
 
     return 0;
 }

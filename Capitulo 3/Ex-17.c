@@ -20,7 +20,7 @@ int main() {
 
     complemento_bit = ~numero;
 
-    printf("Complemento bit a bit: %d", complemento_bit);
+    printf("Complemento bit a bit: %d\n", complemento_bit);
 
     return 0;
 }

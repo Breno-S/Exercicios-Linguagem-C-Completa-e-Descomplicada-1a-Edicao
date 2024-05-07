@@ -15,7 +15,7 @@ int main() {
                     numero_invertido;
 
     printf("Informe um numero inteiro positivo de tres digitos: ");
-    scanf("%hu", &numero);
+    scanf("%3hu", &numero);
 
     digito_3 = numero % 10;
     numero = numero / 10;
@@ -27,7 +27,7 @@ int main() {
 
     numero_invertido = (digito_3 * 100) + (digito_2 * 10) + (digito_1 * 1);
 
-    printf("%hu", numero_invertido);
+    printf("\n%hu\n", numero_invertido);
 
     return 0;
 }

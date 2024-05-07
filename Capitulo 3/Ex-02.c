@@ -8,7 +8,7 @@ int main() {
 
     scanf("%lf", &numero_real);
 
-    printf("%f", numero_real / 5);
+    printf("%f\n", numero_real / 5);
 
     return 0;
 }

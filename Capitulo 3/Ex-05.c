@@ -16,7 +16,7 @@ int main() {
 
     ano_nascimento = ano_atual - idade;
 
-    printf("Ano de nascimento: %hu", ano_nascimento);
+    printf("\nAno de nascimento: %hu\n", ano_nascimento);
 
     return 0;
 }

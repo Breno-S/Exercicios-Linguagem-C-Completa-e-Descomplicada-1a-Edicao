@@ -14,7 +14,7 @@ int main() {
 
     T_fahrenheit = T_celsius * (9.0 / 5.0) + 32;
 
-    printf("%.1f C = %.1f F", T_celsius, T_fahrenheit);
+    printf("%.1f C = %.1f F\n", T_celsius, T_fahrenheit);
 
     return 0;
 }

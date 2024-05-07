@@ -17,9 +17,9 @@ int main() {
     premio_2 = premio_total * 32 / 100;
     premio_3 = premio_total - (premio_1 + premio_2);
 
-    printf("Primeiro ganhador recebe: R$%.2f\n", premio_1);
-    printf("Segindo ganhador recebe: R$%.2f\n", premio_2);
-    printf("Terceiro ganhador recebe: R$%.2f\n", premio_3);
+    printf("Ganhador #1 recebe: R$%.2f\n", premio_1);
+    printf("Ganhador #2 recebe: R$%.2f\n", premio_2);
+    printf("Ganhador #3 recebe: R$%.2f\n", premio_3);
 
     return 0;
 }

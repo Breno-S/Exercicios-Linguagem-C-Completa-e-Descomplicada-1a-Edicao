@@ -16,7 +16,7 @@ int main() {
     metade = numero >> 1; // é o mesmo que (n / 2^1)
 
     printf("Dobro: %d\n", dobro);
-    printf("Metade: %d", metade);
+    printf("Metade: %d\n", metade);
 
     return 0;
 }

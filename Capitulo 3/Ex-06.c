@@ -13,7 +13,7 @@ int main() {
 
     vel_metros_segundo = vel_quilometros_hora / 3.6;
 
-    printf("%.2f km/h = %.2f m/s", vel_quilometros_hora, vel_metros_segundo);
+    printf("%.2f km/h = %.2f m/s\n", vel_quilometros_hora, vel_metros_segundo);
 
     return 0;
 }

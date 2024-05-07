@@ -11,7 +11,7 @@ int main() {
 
     media_aritmetica = (a + b + c + d) / 4;
 
-    printf("%f", media_aritmetica);
+    printf("\n%f\n", media_aritmetica);
 
     return 0;
 }

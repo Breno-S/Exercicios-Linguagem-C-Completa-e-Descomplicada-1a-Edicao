@@ -23,7 +23,7 @@ int main() {
     );
 
     printf(
-        "\nDeslocamento a direita do primeiro pelo segundo: %d",
+        "\nDeslocamento a direita do primeiro pelo segundo: %d\n",
         deslocamento_direita
     );
 

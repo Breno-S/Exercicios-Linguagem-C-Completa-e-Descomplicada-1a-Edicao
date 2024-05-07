@@ -8,15 +8,17 @@ int main() {
             valor_reais,
             valor_dolares;
 
-    printf("Informe o valor em reais: ");
+    printf("Informe a quantidade de reais\n");
+    printf("R$ ");
     scanf("%f", &valor_reais);
 
-    printf("Informe a cotacao do dolar: ");
+    printf("\nInforme a cotacao do dolar: ");
     scanf("%f", &cotacao_dolar);
 
     valor_dolares = valor_reais / cotacao_dolar;
-
-    printf("R$%.2f = U$%.2f", valor_reais, valor_dolares);
+ 
+    printf("\nQuantia em dolares:\n");
+    printf("U$%.2f\n", valor_dolares);
 
     return 0;
 }
