@@ -16,9 +16,9 @@ int main() {
     scanf("%f", &valor_prestacao);
 
     if (valor_prestacao > (0.2 * salario))
-        printf("Emprestimo nao concedio");
+        printf("Emprestimo nao concedido\n");
     else
-        printf("Emprestimo concedido");
+        printf("Emprestimo concedido\n");
 
     return 0;
 }

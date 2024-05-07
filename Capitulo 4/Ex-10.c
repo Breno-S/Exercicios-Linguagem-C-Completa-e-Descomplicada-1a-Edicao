@@ -45,6 +45,8 @@ int main() {
             result = (num1 + num2 + num3) / 3.0;
             printf("\nMedia Aritmetica: %f\n", result);
             break;
+        default:
+            printf("\nOpcao invalida\n");
     }
 
     return 0;

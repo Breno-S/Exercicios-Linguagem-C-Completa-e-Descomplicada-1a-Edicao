@@ -10,9 +10,9 @@ int main() {
     scanf("%d", &num);
 
     if (num % 2 == 0)
-        printf("\nPar");
+        printf("\nPar\n");
     else
-        printf("\nImpar");
+        printf("\nImpar\n");
 
     return 0;
 }

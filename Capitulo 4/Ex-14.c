@@ -13,17 +13,19 @@ int main() {
          ((num % 5 == 0) && !(num % 3 == 0)) ) 
     {
         printf(
-            "%d e divisivel por 3 ou 5, "
+            "%d e divisivel por 3 ou por 5, "
             "mas nao simultaneamente pelos dois.",
             num
         );
     } else {
         printf(
-            "%d ou e simultaneamente divisivel por 3 e 5, "
+            "%d ou e simultaneamente divisivel por 3 e por 5, "
             "ou nao e divisivel pelos dois.",
             num
         );
     }
+
+    printf("\n");
 
     return 0;
 }

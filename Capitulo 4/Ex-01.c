@@ -11,9 +11,9 @@ int main() {
     printf("Maior numero: ");
 
     if (num1 > num2)
-        printf("%f", num1);
+        printf("%f\n", num1);
     else
-        printf("%f", num2);
+        printf("%f\n", num2);
 
     return 0;
 }

@@ -33,8 +33,10 @@ int main() {
             printf("Sabado");
             break;
         default:
-            printf("Dia invalido\n");
+            printf("Dia invalido");
     }
+
+    printf("\n");
 
     return 0;
 }

@@ -25,7 +25,7 @@ int main() {
 
     printf(
         "\nInforme o estado onde sera vendido:\n"
-        "1 - MG | 2 - SP | 3 - RJ | 4 - MS\n\nR:"
+        "1 - MG | 2 - SP | 3 - RJ | 4 - MS\n\nR: "
     );
 
     scanf("%hu", &opcao);
@@ -45,7 +45,7 @@ int main() {
         valor_final = valor_base + (valor_base * 0.08);
     }
 
-    printf("\nValor final do produto: R$%.2f", valor_final);
+    printf("\nValor final do produto: R$%.2f\n", valor_final);
 
     return 0;
 }

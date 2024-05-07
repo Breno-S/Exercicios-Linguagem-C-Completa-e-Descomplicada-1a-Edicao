@@ -30,25 +30,29 @@ int main() {
 
     delta = b * b - 4 * a * c;
 
+    printf("\n");
+
     if (a == 0) {
-        printf("\nNao e equacao de segundo grau");
+        printf("Nao e equacao de segundo grau");
     } else {
         if (delta < 0) {
-            printf("\nNao existe raiz.");
+            printf("Nao existe raiz.");
         }
 
         if (delta == 0) {
             raiz_unica = (-b + sqrt(delta)) / (2.0 * a);
-            printf("\nRaiz unica: %f", raiz_unica);
+            printf("Raiz unica: %f", raiz_unica);
         }
 
         if (delta > 0) {
             raiz1 = (-b + sqrt(delta)) / (2.0 * a);
             raiz2 = (-b - sqrt(delta)) / (2.0 * a);
-            printf("\nPrimeira raiz: %f\n", raiz1);
+            printf("Primeira raiz: %f\n", raiz1);
             printf("Segunda raiz: %f", raiz2);
         }
     }
+
+    printf("\n");
 
     return 0;
 }

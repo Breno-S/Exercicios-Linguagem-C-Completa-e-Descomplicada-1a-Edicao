@@ -10,12 +10,12 @@ int main() {
     scanf("%lf %lf", &num1, &num2);
 
     if (num1 == num2)
-        printf("Numeros iguais");
+        printf("Numeros iguais\n");
     else {
         if (num1 > num2)
-            printf("Maior numero: %lf", num1);
+            printf("Maior numero: %lf\n", num1);
         else
-            printf("Maior numero: %lf", num2);
+            printf("Maior numero: %lf\n", num2);
     }
 
     return 0;

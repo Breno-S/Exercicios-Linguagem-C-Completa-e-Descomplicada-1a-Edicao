@@ -28,14 +28,14 @@ int main() {
     switch (sexo) {
         case '1':
             peso_ideal = (62.1 * altura) - 44.7;
-            printf("\nPeso ideal: %f", peso_ideal);
+            printf("\nPeso ideal: %f\n", peso_ideal);
             break;
         case '2':
             peso_ideal = (72.7 * altura) - 58;
-            printf("\nPeso ideal: %f", peso_ideal);
+            printf("\nPeso ideal: %f\n", peso_ideal);
             break;
         default:
-            printf("\nErro, tente novamente.");
+            printf("\nErro, tente novamente.\n");
     }
 
     return 0;

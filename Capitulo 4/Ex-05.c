@@ -14,7 +14,7 @@ int main() {
 
     if (num > 0) {
         printf("Numero digitado ao quadrado: %f\n", pow(num, 2));
-        printf("Raiz quadrada do numero digitado: %f", sqrt(num));
+        printf("Raiz quadrada do numero digitado: %f\n", sqrt(num));
     }
 
     return 0;

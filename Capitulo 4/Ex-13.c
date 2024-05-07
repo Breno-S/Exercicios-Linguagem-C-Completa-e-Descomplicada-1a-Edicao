@@ -13,7 +13,7 @@ int main() {
     scanf("%c", &opcao);
 
     if (opcao != '+' && opcao != '-' && opcao != '*' && opcao != '/') {
-        printf("Erro. Digite um dos caracteres e aperte ENTER.");
+        printf("Erro. Digite um dos caracteres e aperte ENTER.\n");
         return 0;
     }
 
@@ -36,6 +36,8 @@ int main() {
             printf("%lf / %lf = %lf", opnd1, opnd2, (opnd1 / opnd2));
             break;
     }
+
+    printf("\n");
 
     return 0;
 }

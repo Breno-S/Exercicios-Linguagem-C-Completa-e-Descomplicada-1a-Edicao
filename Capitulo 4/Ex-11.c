@@ -10,7 +10,7 @@ int main() {
     scanf("%hu", &mes);
 
     if (mes < 1 || mes > 12) {
-        printf("Mes invalido\n");
+        printf("Mes invalido");
     }
 
     switch (mes) {
@@ -51,6 +51,8 @@ int main() {
             printf("Dezembro");
             break;
     }
+
+    printf("\n");
 
     return 0;
 }
