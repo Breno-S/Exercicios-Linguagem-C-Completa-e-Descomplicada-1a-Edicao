@@ -18,7 +18,7 @@ int main() {
         printf("%d\n", contagem--);
     }
 
-    printf("FIM!");
+    printf("FIM!\n");
 
     return 0;
 }
@@ -28,11 +28,9 @@ int main() {
  ******************************************************************************/
 
 /*
-
 Utilizando a função time() do cabeçalho <time.h> obtemos um 'timestamp'. Por
 meio de comparações com um timestamp mais novo é possível atrasar a execução do
 código propositalmente.
-
 */
 
 /*
@@ -55,7 +53,7 @@ int main() {
         referencia = time(NULL);
     }
 
-    printf("FIM!");
+    printf("FIM!\n");
 
     return 0;
 }

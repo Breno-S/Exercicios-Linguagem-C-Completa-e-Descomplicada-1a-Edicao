@@ -16,7 +16,7 @@ int main() {
         soma += num;
     }
 
-    printf("\nSoma dos numeros: %f", soma);
+    printf("\nSoma dos numeros: %f\n", soma);
 
     return 0;
 }

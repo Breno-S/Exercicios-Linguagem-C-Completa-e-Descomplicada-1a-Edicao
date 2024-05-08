@@ -35,7 +35,7 @@ int main() {
 
     media /= QTD_NUMS;
 
-    printf("\nMedia: %f", media);
+    printf("\nMedia: %f\n", media);
 
     return 0;
 }

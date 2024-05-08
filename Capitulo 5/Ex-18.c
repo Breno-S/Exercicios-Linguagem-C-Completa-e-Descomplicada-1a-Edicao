@@ -38,7 +38,7 @@ int main() {
         }
     }
 
-    (is_primo) ? printf("%d e primo", num) : printf("%d nao e primo", num);
+    (is_primo) ? printf("%d e primo\n", num) : printf("%d nao e primo\n", num);
 
     return 0;
 }

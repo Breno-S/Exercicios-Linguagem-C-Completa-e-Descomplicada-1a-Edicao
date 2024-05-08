@@ -15,7 +15,7 @@ int main() {
 
     do {
         printf("Informe um numero maior ou igual a zero: ");
-        scanf("%llu", &num);
+        scanf("%lld", &num);
 
         char c;
         while ((c = getchar()) != '\n' && c != EOF) {}
@@ -23,22 +23,18 @@ int main() {
     } while (num < 0);
 
     if (num == 0) {
-        printf("Fim do programa");
-        return 0;
-    }
-    if (num == 1) {
-        printf("Termo #%llu da sequencia de Fibonacci: %llu", num, a);
-    } else if (num == 2) {
-        printf("Termo #%llu da sequencia de Fibonacci: %llu", num, b);
+        printf("Termo #0 da sequencia de Fibonacci: 0\n");
+    } else if (num == 1) {
+        printf("Termo #1 da sequencia de Fibonacci: 1\n");
     } else {
-        for (int i = 3; i <= num; i++) {
+        for (int i = 2; i <= num; i++) {
             c = a + b;
 
             a = b;
             b = c;
         }
 
-        printf("Termo #%llu da sequencia de Fibonacci: %llu", num, c);
+        printf("Termo #%lld da sequencia de Fibonacci: %zu\n", num, c);
     }
 
     return 0;

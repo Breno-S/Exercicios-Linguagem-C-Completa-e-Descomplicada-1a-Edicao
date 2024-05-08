@@ -2,19 +2,21 @@
 números naturais de 0 até N em ordem decrescente. */
 
 #include <stdio.h>
-#include <limits.h> 
+#include <stdint.h> 
 
 int main() {
     size_t num;
 
-    printf("Informe um numero positivo menor que %llu\n\nR: ", SIZE_MAX);
-    scanf("%llu", &num);
+    printf("Informe um numero positivo menor que %zu\n\nR: ", SIZE_MAX);
+    scanf("%zu", &num);
 
     printf("\n");
 
     for (size_t i = num+1; i > 0; ) {
-        printf("%llu ", --i);
+        printf("%zu ", --i);
     }
+
+    printf("\n");
 
     return 0;
 }
@@ -25,21 +27,21 @@ int main() {
 
 /*
 #include <stdio.h>
-#include <limits.h> 
+#include <stdint.h> 
 
 int main() {
     size_t num;
 
-    printf("Informe um numero positivo menor que %llu\n\nR: ", SIZE_MAX);
-    scanf("%llu", &num);
+    printf("Informe um numero positivo menor que %zu\n\nR: ", SIZE_MAX);
+    scanf("%zu", &num);
 
     printf("\n");
 
     do {
-        printf("%llu ", num--);
+        printf("%zu ", num--);
     } while (num >= 1);
     
-    printf("%llu ", num);
+    printf("%zu\n", num);
 
     return 0;
 }

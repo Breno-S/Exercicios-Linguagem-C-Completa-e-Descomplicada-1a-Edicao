@@ -30,6 +30,7 @@ int main() {
     while ((c = getchar()) != '\n' && c != EOF) {}
     
     maior = num;
+    maior_count++;
 
     for (int i = 2; i <= qtd; i++) {
         printf("#%d: ", i);
@@ -45,7 +46,7 @@ int main() {
 
     printf("\nMaior numero lido: %d\n", maior);
     printf(
-        "Quantidade de vezes que o maior numero foi reescrito: %d",
+        "Vezes que um 'maior numero' foi lido: %d\n",
         maior_count
     );
     

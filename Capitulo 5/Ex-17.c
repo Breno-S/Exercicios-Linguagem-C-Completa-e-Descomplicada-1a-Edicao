@@ -25,7 +25,7 @@ int main() {
 
 	for (int i = 0; i <= qtd_linhas; i++) {
 		for (int j = 0; j < i; j++) {
-			printf("%llu ", x++);
+			printf("%d ", x++);
 		}
 		printf("\n");
 	}

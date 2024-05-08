@@ -9,6 +9,8 @@ int main() {
     for (int i = 3, mult_count = 0; mult_count < 5; i += 3, mult_count++) {
         printf("%d ", i);
     }
+    
+    printf("\n");
 
     return 0;
 }

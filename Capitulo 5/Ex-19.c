@@ -22,7 +22,7 @@ int main() {
 
     total += numerador / denominador;
 
-    printf("%.0f/%.0f = %f", numerador, denominador, total);    
+    printf("%.0f/%.0f = %f\n", numerador, denominador, total);    
 
     return 0;
 }

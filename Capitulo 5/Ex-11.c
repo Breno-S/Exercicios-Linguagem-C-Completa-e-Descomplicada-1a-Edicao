@@ -24,12 +24,14 @@ int main() {
         printf("Divisores de %u: ", num);
         for (size_t i = 1; i <= num/2; i++) {
             if (num % i == 0) {
-                printf("%llu, ", i);
+                printf("%zu, ", i);
             }
         }
 
         printf("%d", num);
     }
+
+    printf("\n");
 
     return 0;
 }

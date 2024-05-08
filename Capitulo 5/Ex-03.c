@@ -2,20 +2,22 @@
 primeiros números naturais ímpares. */
 
 #include <stdio.h>
-#include <limits.h>
+#include <stdint.h>
 
 int main() {
     size_t num; 
 
-    printf("Informe um numero positivo menor que %llu\n\nR: ", SIZE_MAX);
-    scanf("%llu", &num);
+    printf("Informe um numero positivo menor que %zu\n\nR: ", SIZE_MAX);
+    scanf("%zu", &num);
 
-    printf("\n%llu primeiro(s) numero(s) impar(es): ", num);
+    printf("\n%zu primeiro(s) numero(s) impar(es): ", num);
 
     for (size_t i = 1, count = 0; count < num; i += 2) {
-        printf("%llu ", i);
+        printf("%zu ", i);
         count++;
     }
+
+    printf("\n");
 
     return 0;
 }

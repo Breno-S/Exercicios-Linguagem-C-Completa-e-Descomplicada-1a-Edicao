@@ -14,16 +14,16 @@ int main() {
     for (size_t i = 1; i < 1000; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
             if (i == 999) {
-                printf("%llu = ", i);
+                printf("%zu = ", i);
             } else {
-                printf("%llu + ", i);
+                printf("%zu + ", i);
             }
 
             soma += i;
         }
     }
 
-    printf("%d", soma);
+    printf("%d\n", soma);
 
     return 0;
 }

@@ -2,10 +2,10 @@
  * Ex-08_overengineered.c                                                     *
  *                                                                            *
  * Feito para resolver o mesmo problema do exercício 8 (capítulo 5), porém    *
- * recebendo na chamada do programa os números para fazer o calculo da média  *
+ * recebendo na chamada do programa os números para fazer o cálculo da média  *
  * (argumentos de linha de comando via argc e argv), podendo ser mais ou      *
  * menos que 10 argumentos.                                                   *
- *                                                                            * 
+ *                                                                            *
  * Ex: "./programa.exe 10 13 18 20 30"                                        *
  * Ex: "./programa.exe 10 13 18 20 30 49 23 1 3 90 4 23 77 420 69"            *
  *                                                                            *
@@ -13,7 +13,7 @@
  * uma dezena inferior à maior suportada pelo tipo long long.                 *
  *                                                                            *
  * Ex: "./programa.exe 111111111111111111 -111111111111111111"                *
- *                                                                            * 
+ *                                                                            *
  * A média é representada como long double para que haja menos erros de       *
  * representação. Se no seu computador a média impressa for sempre 0, então a *
  * função printf() sendo utilizada não implementa long double. Se você        *
@@ -69,7 +69,7 @@ int main(int argc, char *argv[]) {
 
         media /= quantidade;
     }
-    
+
     // Senão, pede a quandidade padrão de números inteiros e calcula a média
     else {
         printf("Informe %d numeros para calcular a media:\n\n", QTD_PADRAO);
@@ -94,10 +94,10 @@ int main(int argc, char *argv[]) {
     } 
 
     // Comente esta linha se somente 0 é impresso e estiver utilizando minGW
-    printf("\nMedia: %Lf", media);
-    
+    printf("\nMedia: %Lf\n", media);
+
     // Descomente esta linha se somente 0 é impresso e estiver utilizando minGW
-    // __mingw_printf("\nMedia: %Lf", media);
+    // __mingw_printf("\nMedia: %Lf\n", media);
 
     // Alternativamente, você pode compilar o programa com a opção
     // -D__USE_MINGW_ANSI_STDIO (caso esteja usando o minGW).

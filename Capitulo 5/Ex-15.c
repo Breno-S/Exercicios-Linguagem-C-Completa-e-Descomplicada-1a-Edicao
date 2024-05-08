@@ -41,6 +41,6 @@ int main() {
     } while (1); // loop infinito
 
     printf("\nMaior numero lido: %lld\n", maior);
-    printf("Menor numero lido: %lld", menor);
+    printf("Menor numero lido: %lld\n", menor);
     return 0;
 }

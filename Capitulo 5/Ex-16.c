@@ -6,19 +6,22 @@ Apresente um programa que calcule o valor de qualquer Hn. */
 #include <stdio.h>
 
 int main() {
-    size_t 	num;
+    size_t 	num = 0;
     double	harmonico;
 
-    harmonico = 1.0;
+    do {
+	    printf("Informe o valor de n para calcular seu Numero Harmonico: ");
+	    scanf("%zu", &num);
 
-    printf("Informe o valor de n para calcular o Numero Harmonico de n: ");
-    scanf("%llu", &num);
+	    int c;
+	    while ((c = getchar()) != '\n' && c != EOF) {}
+    } while (num == 0);
 
-    for (size_t i = 2; i <= num; i++) {
+    for (size_t i = 1; i <= num; i++) {
         harmonico += 1.0 / i;
     }
 
-    printf("H(%llu) = %f", num, harmonico);
+    printf("H(%zu) = %f\n", num, harmonico);
 
     return 0;
 }

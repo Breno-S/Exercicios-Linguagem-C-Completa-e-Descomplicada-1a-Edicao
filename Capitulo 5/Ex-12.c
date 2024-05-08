@@ -28,7 +28,7 @@ int main() {
             }
         }
 
-        printf("Soma dos divisores de %d exceto ele mesmo: %d", num, soma);
+        printf("Soma dos divisores de %d exceto ele mesmo: %d\n", num, soma);
     }
 
     return 0;
