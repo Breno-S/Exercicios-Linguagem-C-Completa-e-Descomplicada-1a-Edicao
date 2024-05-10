@@ -30,7 +30,7 @@ int main() {
     }
 
     printf("\nQuantidade de numeros negativos: %d\n", qtd_negativos);
-    printf("Soma dos numeros positivos: %f", soma_positivos);
+    printf("Soma dos numeros positivos: %f\n", soma_positivos);
     
 
     return 0;

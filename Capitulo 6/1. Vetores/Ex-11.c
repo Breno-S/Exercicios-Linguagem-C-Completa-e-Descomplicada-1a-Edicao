@@ -42,7 +42,7 @@ int main() {
         printf("%lf, ", quadrados[i]);
     }
 
-    printf("%lf}", quadrados[qtd-1]);
+    printf("%lf}\n", quadrados[qtd-1]);
 
     return 0;
 }

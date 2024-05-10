@@ -30,7 +30,7 @@ int main() {
     } while ((x > 8 || x <= 0) || (y > 8 || y <= 0));
 
     printf(
-        "Soma dos valores #%d (%d) e #%d (%d) do vetor: %d",
+        "Soma dos valores #%d (%d) e #%d (%d) do vetor: %d\n",
         x,
         vetor[x-1],
         y,

@@ -17,7 +17,7 @@ int main() {
     }
 
     printf(
-        "\nValores lidos: {%d, %d, %d, %d, %d, %d}",
+        "\nValores lidos: {%d, %d, %d, %d, %d, %d}\n",
         valores[0],
         valores[1],
         valores[2],

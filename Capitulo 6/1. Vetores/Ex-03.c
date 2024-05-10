@@ -29,7 +29,7 @@ int main() {
         valores[4]
     );
 
-    printf("\nMedia: %f", media);
+    printf("\nMedia: %f\n", media);
 
     return 0;
 }

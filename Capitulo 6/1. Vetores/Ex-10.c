@@ -27,7 +27,7 @@ int main() {
         printf("%d, ", not_multiplos_7[i]);
     }
 
-    printf("%d}", not_multiplos_7[99]);
+    printf("%d}\n", not_multiplos_7[99]);
 
 
     return 0;

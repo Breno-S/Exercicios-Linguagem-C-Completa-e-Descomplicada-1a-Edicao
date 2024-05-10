@@ -23,7 +23,7 @@ int main() {
     printf("Informe a amostra para calcular seu desvio padrao\n\n");
 
     for (size_t i = 0; i < N; i++) {
-        printf("[%d]: ", i);
+        printf("[%zu]: ", i);
         scanf("%lf", &amostra[i]);
 
         int c;
@@ -45,5 +45,7 @@ int main() {
     // Resultado do desvio padrão amostral (raiz quadrada da variância amostral)
     d = sqrt(somatorio_quadrados_desvios / (N - 1));
 
-    printf("\nDesvio Padrao: %lf ", d);
+    printf("\nDesvio Padrao: %f\n", d);
+
+    return 0;
 }

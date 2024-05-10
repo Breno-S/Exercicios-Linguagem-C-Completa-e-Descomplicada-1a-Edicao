@@ -27,13 +27,13 @@ int main() {
         }
 
         if (X[i] < menor) {
-            menor = X[1];
+            menor = X[i];
         }
 
     }
 
     printf("\nMenor numero lido: %d\n", menor);
-    printf("Maior numero lido: %d", maior);
+    printf("Maior numero lido: %d\n", maior);
 
     return 0;
 }

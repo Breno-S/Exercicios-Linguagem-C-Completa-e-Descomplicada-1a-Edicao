@@ -13,7 +13,7 @@ int main() {
             num = 0;
     char    is_repetido = 0;
 
-    printf("Preencha o array com 10 valores\n");
+    printf("Preencha o array com 10 valores\n\n");
     printf("Valor #1: ");
     scanf("%lf", &vetor[0]);
 
@@ -45,7 +45,7 @@ int main() {
         i++;
     }
 
-    printf("\nArray final:\n");
+    printf("\nArray final:\n\n");
 
     for (char i = 0; i < 10; i++) {
         printf("[%d] = %lf\n", i, vetor[i]);

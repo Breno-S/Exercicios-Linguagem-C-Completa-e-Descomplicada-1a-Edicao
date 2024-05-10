@@ -10,7 +10,7 @@ int main() {
     printf("Preencha um array de 10 posicoes\n\n");
 
     for (size_t i = 0; i < 10; i++) {
-        printf("[%d]: ", i);
+        printf("[%zu]: ", i);
         scanf("%d", &vetor[i]);
 
         int c;
@@ -22,18 +22,22 @@ int main() {
             continue;
         }
 
-        for (size_t j = 0; j < 10; j++) {
-            if (i == j) {
-                continue;
-            }
-
+        for (size_t j = i+1; j < 10; j++) {
             if (vetor[i] == vetor[j]) {
-                printf("Valor repetido: [%d] = [%d] = %d\n", i, j, vetor[i]);
-                repetidos[i] = repetidos[j] = 1;
+                printf("\n%d -> [%zu] ", vetor[i], i);
+                repetidos[i] = 1;
+
+                for (; j < 10; j++) {
+                    if (vetor[i] == vetor[j]) {
+                        printf("[%zu] ", j);
+                        repetidos[j] = 1;
+                    }
+                }
             }
         }
     }
 
+    printf("\n");
 
     return 0;
 }

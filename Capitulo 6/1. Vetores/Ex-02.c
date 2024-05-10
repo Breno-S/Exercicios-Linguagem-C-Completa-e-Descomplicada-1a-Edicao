@@ -16,7 +16,7 @@ int main() {
     }
 
     printf(
-        "Valores lidos em ordem reversa: {%d, %d, %d, %d, %d, %d}",
+        "Valores lidos em ordem reversa: {%d, %d, %d, %d, %d, %d}\n",
         valores[5],
         valores[4],
         valores[3],

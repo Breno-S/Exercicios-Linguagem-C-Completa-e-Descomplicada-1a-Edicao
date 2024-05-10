@@ -27,13 +27,13 @@ int main() {
         }
     }
 
-    printf("Array ordenado: {");
+    printf("\nArray ordenado: {");
 
     for (char i = 0; i < 9; i++) {
         printf("%f, ", vetor[i]);
     }
 
-    printf("%f}", vetor[9]);
+    printf("%f}\n", vetor[9]);
 
     return 0;
 }

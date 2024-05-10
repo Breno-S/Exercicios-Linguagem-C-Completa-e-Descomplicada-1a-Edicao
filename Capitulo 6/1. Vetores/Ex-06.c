@@ -19,7 +19,7 @@ int main() {
         }
     }
     
-    printf("\nTotal de numeros pares no array: %d", total_pares);
+    printf("\nTotal de numeros pares no array: %d\n", total_pares);
 
     return 0;
 }
