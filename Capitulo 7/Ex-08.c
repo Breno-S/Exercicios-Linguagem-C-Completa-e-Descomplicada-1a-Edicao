@@ -88,10 +88,10 @@ int main() {
     }
 
     if (has_corresp) {
-        printf("\nString 2 esta contida na string 1!");
+        printf("\nString 2 esta contida na string 1!\n");
     } else {
         printf(
-            "\nNenhuma correspondencia da string 2 foi encontrada na string 1."
+            "\nNenhuma correspondencia da string 2 foi encontrada na string 1.\n"
         );
     }
 

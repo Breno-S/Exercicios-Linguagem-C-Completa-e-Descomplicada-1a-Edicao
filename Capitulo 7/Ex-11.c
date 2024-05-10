@@ -13,9 +13,7 @@ int main() {
     fgets(str, 64, stdin);
 
     // Calcula o tamanho da string
-    for (int i = 0; str[i] != '\0'; i++) {
-        tamanho++;
-    }
+    for (tamanho = 0; str[tamanho] != '\0'; tamanho++) {}
 
     // Retira o caractere de nova linha
     if (str[tamanho-1] == '\n') {
@@ -23,12 +21,12 @@ int main() {
         tamanho--;
     }
 
-    for (size_t i = 0; i < sizeof(str); i++) {
+    for (size_t i = 0; i < tamanho; i++) {
         if (str[i] >= 65 && str[i] <= 90) {
             str[i] += 32;
         }
     }
     
-    printf("String convertida para letras minusculas: %s", str);
+    printf("String convertida para letras minusculas: %s\n", str);
     return 0;
 }

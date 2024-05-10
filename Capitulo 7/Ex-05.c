@@ -37,7 +37,7 @@ int main() {
         str[i] = char_fim;
     }
     
-    printf("Frase invertida: %s", str);
+    printf("Frase invertida: %s\n", str);
 
     return 0;
 }

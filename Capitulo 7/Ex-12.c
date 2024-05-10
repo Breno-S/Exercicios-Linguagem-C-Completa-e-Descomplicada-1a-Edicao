@@ -38,7 +38,7 @@ int main() {
 
     desconto = (valor / 10);
 
-    printf("Desconto 10%% (a vista): %.2f\n", desconto);
+    printf("Desconto (a vista) 10%%: %.2f\n", desconto);
     printf("\nValor final: %.2f\n", valor-desconto);
 
     return 0;

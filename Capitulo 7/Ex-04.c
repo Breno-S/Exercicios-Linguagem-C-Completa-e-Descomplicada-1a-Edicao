@@ -24,5 +24,7 @@ int main() {
        putchar(str[i]); 
     }
 
+    printf("\n");
+
     return 0;
 }

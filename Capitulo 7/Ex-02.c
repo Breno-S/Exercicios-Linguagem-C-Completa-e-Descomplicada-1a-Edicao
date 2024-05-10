@@ -8,7 +8,7 @@ int main() {
     
     fgets(str, 32, stdin);
     
-    printf("%.4s", str);
+    printf("%.4s\n", str);
     
     return 0;
 }

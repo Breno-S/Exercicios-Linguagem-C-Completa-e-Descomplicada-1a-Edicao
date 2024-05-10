@@ -44,10 +44,10 @@ int main() {
         printf(
             "Informe a posicao final (min = %d / max = %d): ",
             i,
-            tamanho_str
+            tamanho_str-1
         );
         scanf("%d", &j);
-    } while (j < 0 || j < i);
+    } while (j > tamanho_str-1 || j < i);
 
     printf("\nString: final: ");
 
@@ -55,6 +55,8 @@ int main() {
     for (; i <= j && S[i] != '\0'; i++) {
         putchar(S[i]);
     }
+
+    printf("\n");
 
     return 0;
 }

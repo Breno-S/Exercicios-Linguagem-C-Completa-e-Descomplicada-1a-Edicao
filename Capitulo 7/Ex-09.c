@@ -82,10 +82,10 @@ int main() {
 
     if (qtd_corresp == 0) {
         printf(
-            "\nNenhuma correspondencia da string 2 foi encontrada na string 1."
+            "\nNenhuma correspondencia da string 2 foi encontrada na string 1.\n"
         );
     } else {
-        printf("\nTotal de correspondencias encontradas: %d", qtd_corresp);
+        printf("\nTotal de correspondencias encontradas: %d\n", qtd_corresp);
     }
 
     return 0;

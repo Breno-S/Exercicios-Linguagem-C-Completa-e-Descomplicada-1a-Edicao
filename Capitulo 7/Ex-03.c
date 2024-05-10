@@ -20,7 +20,7 @@ int main() {
         tamanho_str++;
     }
 
-    printf("\nQuantidade de caracteres da string: %d", tamanho_str);
+    printf("\nQuantidade de caracteres da string: %d\n", tamanho_str);
     
     return 0;
 }

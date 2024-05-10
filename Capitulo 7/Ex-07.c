@@ -58,10 +58,10 @@ int main() {
     // Compara as strings
     if (strncmp(str_lida, str_contrario, tamanho_str) == 0) {
         printf("\nA string e um palindromo!\n");
-        printf("\nFrase invertida: %s", str_contrario);
+        printf("\nFrase invertida: %s\n", str_contrario);
     } else {
         printf("\nA string nao e um palindromo.\n");
-        printf("\nFrase invertida: %s", str_contrario);
+        printf("\nFrase invertida: %s\n", str_contrario);
     }
 
     return 0;

@@ -35,7 +35,7 @@ int main() {
         }
     }
 
-    printf("Quantidade de vogais [nao acentuadas] na string: %d", qtd_vogais);
+    printf("Quantidade de vogais [nao acentuadas] na string: %d\n", qtd_vogais);
 
     return 0;
 }

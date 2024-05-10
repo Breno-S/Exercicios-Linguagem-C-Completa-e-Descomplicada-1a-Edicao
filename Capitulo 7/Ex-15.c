@@ -6,8 +6,7 @@ Este algoritmo somente funciona para caracteres da tabela ASCII. Qualquer
 comparação envolvendo caracteres da tabela ASCII extendida pode resultar em algo
 fora da ordem alfabética. Recomendo muito pesquisar sobre a história do ASCII,
 do Unicode, das codificações (principalmente o UTF-8) e das implementações em C,
-como <wchar.h> e <uchar.h>. Creio que isso pode ajudar qualquer um a entender
-mais a fundo como os computadores e a interpretação da informação funcionam.
+como <wchar.h> e <uchar.h>. 
 */
 
 #include <stdio.h>

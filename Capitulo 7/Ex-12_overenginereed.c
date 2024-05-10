@@ -91,13 +91,11 @@ int main() {
 
     printf("---------------------------------------------------\n");
     printf("Total:                                  $%10.2f\n", total);
-    printf(
-        "%hd%% desconto:                          -$%10.2f\n\n",
+    printf("%hd%% desconto:                          -$%10.2f\n\n",
         desconto,
         total * ((float) desconto) / 100.0
     );
-    printf(
-        "A pagar:                                $%10.2f\n",
+    printf("A pagar:                                $%10.2f\n",
         total - total * ((float) desconto) / 100.0
     );
     
