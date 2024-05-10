@@ -29,7 +29,7 @@ int main() {
         }
     }
 
-    printf("\nSoma dos valores que nao pertencem a nenhuma diagonal: %d", soma);
+    printf("\nSoma dos valores que nao pertencem a nenhuma diagonal: %d\n", soma);
 
     return 0;
 }

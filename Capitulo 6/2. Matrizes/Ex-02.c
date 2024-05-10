@@ -36,7 +36,7 @@ int main() {
 
     printf(
         "\nMaior numero da matriz: %d\n"
-        "\nPosicao: [%d][%d]",
+        "\nPosicao: [%d][%d]\n",
         maior,
         maior_i,
         maior_j

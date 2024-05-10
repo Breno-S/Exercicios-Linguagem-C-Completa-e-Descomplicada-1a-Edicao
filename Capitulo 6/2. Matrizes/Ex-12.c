@@ -26,7 +26,7 @@ int main() {
         }
     }
 
-    printf("\nSoma dos valores abaixo da diagonal principal: %d", soma);
+    printf("\nSoma dos valores abaixo da diagonal principal: %d\n", soma);
 
     return 0;
 }

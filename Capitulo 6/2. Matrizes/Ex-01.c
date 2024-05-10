@@ -29,7 +29,7 @@ int main() {
         }
     }
 
-    printf("\nMenor numero da matriz: %d", menor);
+    printf("\nMenor numero da matriz: %d\n", menor);
 
     return 0;
 }

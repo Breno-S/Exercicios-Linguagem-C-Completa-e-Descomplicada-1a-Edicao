@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    printf("\nQuantidade de valores negativos: %d", qtd_negativos);
+    printf("\nQuantidade de valores negativos: %d\n", qtd_negativos);
 
     return 0;
 }

@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    printf("\nSoma dos valores da diagonal principal: %d", soma_diagonal);
+    printf("\nSoma dos valores da diagonal principal: %d\n", soma_diagonal);
 
     return 0;
 }

@@ -23,7 +23,7 @@ int main() {
         }
     }
 
-    printf("\nQuantidade de valores maiores que 10: %d", maiores_10);
+    printf("\nQuantidade de valores maiores que 10: %d\n", maiores_10);
 
     return 0;
 }

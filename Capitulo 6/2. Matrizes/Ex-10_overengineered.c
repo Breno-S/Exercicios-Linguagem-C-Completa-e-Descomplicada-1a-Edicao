@@ -188,6 +188,8 @@ int main() {
     if (total_1 == total_2 && total_1 == total_3) {
         printf("N/A");
     }
+
+    printf("\n");
     
     return 0;
 }

@@ -4,7 +4,7 @@ também a soma dos elementos que não pertencem a nenhuma das duas diagonais.
 Imprima na tela a diferença entre os dois valores. */
 
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 #define TAMANHO 5
 
@@ -37,7 +37,7 @@ int main() {
 
     printf(
         "\nDiferenca entre a soma dos valores pertencentes a alguma diagonal "
-        "(%d) e a soma daqueles que nao pertencem (%d): %d",
+        "(%d) e a soma daqueles que nao pertencem (%d): %d\n",
         soma_diagonais,
         soma_resto,
         diferenca

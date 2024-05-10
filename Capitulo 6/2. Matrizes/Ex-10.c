@@ -18,14 +18,14 @@ int main() {
 
         for (int j = 0; j < 3; j++) {
             printf("\tAvaliacao #%d: ", j + 1);
-            scanf("%f", &notas[i][j]);
+            scanf("%d", &notas[i][j]);
 
             int c;
             while ((c = getchar()) != '\n' && c != EOF) {}
         }
     }
 
-    float   pior_nota;
+    int   pior_nota;
     int     posicao_pior_nota;
 
     for (int i = 0; i < 10; i++) {

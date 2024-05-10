@@ -36,5 +36,7 @@ int main() {
         printf("%d ", vetor[i]);
     }
 
+    printf("\n");
+
     return 0;
 }
