@@ -55,5 +55,8 @@ int main() {
     scanf("%d", &num);
 
     print_num_mes(num);
+
+    printf("\n");
+
     return 0;
 }

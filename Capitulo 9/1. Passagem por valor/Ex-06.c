@@ -22,7 +22,7 @@ int main() {
         scanf("%f", &altura);
     }
 
-    printf("\nIMC = %.2f", valor_IMC(peso, altura));
+    printf("\nIMC = %.2f\n", valor_IMC(peso, altura));
 
     return 0;
 }

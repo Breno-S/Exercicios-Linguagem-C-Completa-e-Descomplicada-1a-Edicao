@@ -17,10 +17,10 @@ int main() {
     } while (num < 0);
 
     // Comente esta linha se somente 0 é impresso e estiver utilizando minGW
-    printf("Com %d termos,\n\n e = %.20Lf", num, euler(num));
+    printf("Com %d termos,\n\n e = %.20Lf\n", num, euler(num));
     
     // Descomente esta linha se somente 0 é impresso e estiver utilizando minGW
-    // __mingw_printf("Com %d termos,\n\n e = %.20Lf", num, euler(num));
+    // __mingw_printf("Com %d termos,\n\n e = %.20Lf\n", num, euler(num));
 
     /*
     Alternativamente, você pode compilar o programa com a opção

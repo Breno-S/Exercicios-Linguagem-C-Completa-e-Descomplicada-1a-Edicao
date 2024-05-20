@@ -65,7 +65,7 @@ int main() {
         }
     }
 
-    printf("\nMedia: %.2f", calc_media_tipo(nota1, nota2, nota3, opcao));
+    printf("\nMedia: %.2f\n", calc_media_tipo(nota1, nota2, nota3, opcao));
 
     return 0;
 }

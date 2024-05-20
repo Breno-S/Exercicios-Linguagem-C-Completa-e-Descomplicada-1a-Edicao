@@ -21,9 +21,9 @@ int main() {
     } while (num < 0);
 
     if (maior_fator_primo(num) != -1) {
-        printf("\nMaior fator primo de %d = %d", num, maior_fator_primo(num));
+        printf("\nMaior fator primo de %d = %d\n", num, maior_fator_primo(num));
     } else {
-        printf("\n%d nao possui fator primo", num);
+        printf("\n%d nao possui fator primo\n", num);
     }
 
     return 0;

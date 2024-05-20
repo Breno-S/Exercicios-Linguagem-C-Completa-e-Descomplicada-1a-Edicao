@@ -16,7 +16,7 @@ int main() {
         scanf("%lf", &raio);
     }
 
-    printf("Volume da esfera: %.2f", volume_esfera(raio));
+    printf("Volume da esfera: %.2f\n", volume_esfera(raio));
 
     return 0;
 }

@@ -37,7 +37,7 @@ int main() {
     printf("Informe o expoente: ");
     scanf("%d", &exp);
 
-    printf("%d ^ %d = %f", base, exp, my_pow(base,exp));
+    printf("%d ^ %d = %f\n", base, exp, my_pow(base,exp));
 
     return 0;
 }

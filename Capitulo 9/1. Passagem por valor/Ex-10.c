@@ -47,7 +47,7 @@ int main() {
     scanf("%lf", &num2);
 
     printf(
-        "%f %c %f = %f",
+        "%f %c %f = %f\n",
         num1,
         operacao,
         num2,

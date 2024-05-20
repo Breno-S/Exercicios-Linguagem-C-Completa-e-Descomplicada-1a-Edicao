@@ -15,7 +15,7 @@ int main() {
     printf("Informe a temperatura em Fahrenheit: ");
     scanf("%f", &temp_F);
 
-    printf("%.2f F = %.2f C", temp_F, fahrenheit_to_celsius(temp_F));
+    printf("%.2f F = %.2f C\n", temp_F, fahrenheit_to_celsius(temp_F));
 
     return 0;
 }

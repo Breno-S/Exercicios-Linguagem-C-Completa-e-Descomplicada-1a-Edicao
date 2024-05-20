@@ -24,7 +24,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (num < 1);
 
-    printf("Somatorio de 1 ate %d = %llu", num, somatorio_1_ate_n(num));
+    printf("Somatorio de 1 ate %d = %llu\n", num, somatorio_1_ate_n(num));
 
     return 0;
 }

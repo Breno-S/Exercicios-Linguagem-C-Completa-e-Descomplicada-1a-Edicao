@@ -26,7 +26,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (angulo < 0);
 
-    printf("Seno de %f = %.3f", angulo, seno_por_taylor(angulo));
+    printf("Seno de %f = %.3f\n", angulo, seno_por_taylor(angulo));
 
     return 0;
 }

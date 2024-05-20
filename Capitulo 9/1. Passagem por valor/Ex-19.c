@@ -16,21 +16,17 @@ double graus_para_radianos(double graus);
 double cosseno_por_taylor(double angulo_graus);
 
 int main() {
-    int angulo = -1;
+    double angulo = -1;
 
     do {
         printf("Informe o angulo em graus para calcular o cosseno: ");
-        scanf("%d", &angulo);
+        scanf("%lf", &angulo);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (angulo < 0);
 
-    printf(
-        "Cosseno de %f = %.3f",
-        angulo,
-        cosseno_por_taylor(angulo)
-    );
+    printf("Cosseno de %f = %.3f\n", angulo, cosseno_por_taylor(angulo));
 
     return 0;
 }

@@ -47,7 +47,7 @@ int main() {
     }
 
     printf(
-        "\n%.2d:%.2d:%.2d e igual a %ld segundos decorridos",
+        "\n%.2d:%.2d:%.2d e igual a %ld segundos decorridos\n",
         horas,
         minutos,
         segundos,

@@ -25,7 +25,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (num <= 0);
 
-    printf("Resultado: %f", serie_S(num));
+    printf("Resultado: %f\n", serie_S(num));
 
     return 0;
 }

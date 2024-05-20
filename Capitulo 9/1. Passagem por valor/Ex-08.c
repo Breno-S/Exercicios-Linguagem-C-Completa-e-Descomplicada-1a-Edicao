@@ -26,9 +26,9 @@ int main() {
     scanf("%d", &num);
 
     if (is_quadrado_perfeito(num)) {
-        printf("%d e um quadrado perfeito", num);
+        printf("%d e um quadrado perfeito\n", num);
     } else {
-        printf("%d NAO e um quadrado perfeito", num);
+        printf("%d NAO e um quadrado perfeito\n", num);
     }
     
     return 0;

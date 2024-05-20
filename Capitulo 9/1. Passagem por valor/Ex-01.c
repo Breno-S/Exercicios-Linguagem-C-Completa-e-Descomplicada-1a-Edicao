@@ -13,7 +13,7 @@ int main() {
     printf("Informe dois numeros: ");
     scanf("%d %d", &num1, &num2);
 
-    printf("Maior numero: %d", maior(num1, num2));
+    printf("Maior numero: %d\n", maior(num1, num2));
 
     return 0;
 }

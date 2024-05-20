@@ -24,7 +24,7 @@ int main() {
         scanf("%lf", &raio);
     }
 
-    printf("\nVolume do cilindro: %.2f", volume_cilindro(altura, raio));
+    printf("\nVolume do cilindro: %.2f\n", volume_cilindro(altura, raio));
 
     return 0;
 }
