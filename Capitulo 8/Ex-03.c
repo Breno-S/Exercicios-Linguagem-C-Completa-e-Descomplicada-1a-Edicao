@@ -36,7 +36,7 @@ int main() {
 
     distancia = sqrt(pow(ponto1.x - ponto2.x, 2) + pow(ponto1.y - ponto2.y, 2));
 
-    printf("\nDistancia entre os dois pontos: %f", distancia);
+    printf("\nDistancia entre os dois pontos: %f\n", distancia);
     
     return 0;
 }

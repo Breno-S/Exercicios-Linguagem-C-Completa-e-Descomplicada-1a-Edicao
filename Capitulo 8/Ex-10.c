@@ -4,7 +4,6 @@ para o mais novo. */
 
 #include <stdio.h>
 #include <string.h>
-#include <limits.h>
 
 #define QTD_ATLETAS 5
 
@@ -23,7 +22,7 @@ int main() {
     printf("Informe os dados de %d atletas\n\n", QTD_ATLETAS);
 
     for (size_t i = 0; i < QTD_ATLETAS; i++) {
-        printf("#%d\n", i+1);
+        printf("#%zu\n", i+1);
 
         printf("\tNome: ");
         fgets(atleta[i].nome, 64, stdin);
@@ -50,7 +49,7 @@ int main() {
         while ((c = getchar() != '\n' && c != EOF)) {}
         
         printf("\tAltura (metros): ");
-        scanf("%f", &atleta[i].altura);
+        scanf("%lf", &atleta[i].altura);
 
         while ((c = getchar() != '\n' && c != EOF)) {}
     }
@@ -70,7 +69,7 @@ int main() {
     printf("\nAtletas em ordem etaria decrescente:\n\n");
 
     for (size_t i = 0; i < QTD_ATLETAS; i++) {
-        printf("#%d - %s\n",i+1, atleta[i].nome);
+        printf("#%zu - %s\n",i+1, atleta[i].nome);
     }
     
     return 0;

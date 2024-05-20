@@ -9,7 +9,7 @@ contra aqueles nascidos antes de Jesus de Nazaré... Que vergonha...
 
 Falando sério agora, eu gostaria de chamar atenção ao fato de que a
 representação do tempo nos computadores nunca será perfeita, por diferentes
-motivos, sejam eles históricos, culturais, astronômicos ou ligados limitações
+motivos, sejam eles históricos, culturais, astronômicos ou ligados às limitações
 do próprio hardware. Sempre teremos que abrir mão de alguma coisa se quisermos
 medir o tempo e representá-lo.
 */
@@ -19,8 +19,8 @@ medir o tempo e representá-lo.
 #define QTD_PESSOAS 6
 
 struct Data {
-    unsigned char dia;
-    unsigned char mes;
+    unsigned short dia;
+    unsigned short mes;
     unsigned ano;
 };
 
@@ -64,7 +64,7 @@ int main() {
 
             printf("\tData de nascimento (dd/mm/aaaa): ");
             scanf(
-                "%2u/%2u/%4u",
+                "%2hu/%2hu/%4u",
                 &pessoa[i].dataNasc.dia,
                 &pessoa[i].dataNasc.mes,
                 &pessoa[i].dataNasc.ano

@@ -63,14 +63,14 @@ int main() {
     );
 
     // Base é a distancia no eixo x
-    base = retangulo.bottom_right.x - retangulo.top_left.x;
+    base = fabs(retangulo.bottom_right.x - retangulo.top_left.x);
 
     // Altura é a distância no eixo y
-    altura = retangulo.top_left.y - retangulo.bottom_right.y;
+    altura = fabs(retangulo.top_left.y - retangulo.bottom_right.y);
 
-    area = abs(base * altura);
+    area = base * altura;
 
-    perimetro = abs(base*2) + abs(altura*2);
+    perimetro = base * 2 + altura * 2;
 
     printf("\nPropriedades do retangulo\n\n");
     printf("Area: %f\n", area);

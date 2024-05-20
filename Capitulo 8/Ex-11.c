@@ -5,6 +5,7 @@ decorreram entre as duas data */
 
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 enum {
     PRIMEIRA,
@@ -12,8 +13,8 @@ enum {
 };
 
 struct Data {
-    unsigned char dia;
-    unsigned char mes;
+    unsigned short dia;
+    unsigned short mes;
     unsigned ano;
 };
 
@@ -39,7 +40,7 @@ int main() {
             data[i].ano = 0;
 
             printf("\t#%d: ", i+1);
-            scanf("%2u/%2u/%4u", &data[i].dia, &data[i].mes, &data[i].ano);
+            scanf("%2hu/%2hu/%4u", &data[i].dia, &data[i].mes, &data[i].ano);
 
             int c;
             while ((c = getchar()) != '\n' && c != EOF) {}
@@ -176,15 +177,13 @@ int main() {
     }
 
     // Se o ano e o mês forem iguais nas duas datas
-    if (
-        (data[PRIMEIRA].ano == data[SEGUNDA].ano) &&
+    if ((data[PRIMEIRA].ano == data[SEGUNDA].ano) &&
         (data[PRIMEIRA].mes == data[SEGUNDA].mes)
     ) {
         // Os dias restantes são a diferença entre as datas
         qtd_dias_completos = abs(data[PRIMEIRA].dia - data[SEGUNDA].dia);
     } else {
         // Senão...
-
         // Calcula quantos dias há entre o dia da menor data e o mes à direita
         switch (data[i_menor].mes) {
             case 1:
@@ -219,7 +218,7 @@ int main() {
 
     diff_total += qtd_dias_completos;
 
-    printf("\nQuantidade de dias entre as duas datas: %d", diff_total);
+    printf("\nQuantidade de dias entre as duas datas: %d\n", diff_total);
 
     return 0;
 }

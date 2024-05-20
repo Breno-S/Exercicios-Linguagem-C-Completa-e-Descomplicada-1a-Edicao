@@ -29,7 +29,7 @@ int main() {
     printf("Informe os dados de %d atletas\n\n", QTD_ATLETAS);
 
     for (size_t i = 0; i < QTD_ATLETAS; i++) {
-        printf("#%d\n", i+1);
+        printf("#%zu\n", i+1);
 
         printf("\tNome: ");
         fgets(atleta[i].nome, 64, stdin);
@@ -56,7 +56,7 @@ int main() {
         while ((c = getchar() != '\n' && c != EOF)) {}
         
         printf("\tAltura (metros): ");
-        scanf("%f", &atleta[i].altura);
+        scanf("%lf", &atleta[i].altura);
 
         while ((c = getchar() != '\n' && c != EOF)) {}
     }
@@ -72,7 +72,7 @@ int main() {
     }
     
     printf("\nAtleta mais alto: %s", atleta[i_alto].nome);
-    printf("\nAtleta mais velho: %s", atleta[i_velho].nome);
+    printf("\nAtleta mais velho: %s\n", atleta[i_velho].nome);
     
     return 0;
 }

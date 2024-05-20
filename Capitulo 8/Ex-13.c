@@ -24,7 +24,7 @@ int main() {
 
     while (mes < 1 || mes > 12) {
         printf("Informe um mes de 1 a 12: ");
-        scanf("%d", &mes);
+        scanf("%d", (int *) &mes);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}

@@ -19,7 +19,7 @@ int main() {
 
     while (diaSemana < 1 || diaSemana > 7) {
         printf("Informe um dia de 1 a 7: ");
-        scanf("%d", &diaSemana);
+        scanf("%d", (int *) &diaSemana);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}

@@ -74,12 +74,12 @@ int main() {
     printf("y: ");
     scanf("%lf", &ponto.y);
 
-    if ((ponto.x > retangulo.top_left.x && ponto.x < retangulo.bottom_right.x)
-     && (ponto.y < retangulo.top_left.y && ponto.y > retangulo.bottom_right.y)
+    if ((ponto.x >= retangulo.top_left.x && ponto.x <= retangulo.bottom_right.x)
+     && (ponto.y <= retangulo.top_left.y && ponto.y >= retangulo.bottom_right.y)
     ) {
-        printf("\nO ponto esta contido no retangulo.");
+        printf("\nO ponto esta contido no retangulo.\n");
     } else {
-        printf("\nO ponto nao se encontra dentro do retangulo.");
+        printf("\nO ponto nao se encontra dentro do retangulo.\n");
     }
 
     return 0;

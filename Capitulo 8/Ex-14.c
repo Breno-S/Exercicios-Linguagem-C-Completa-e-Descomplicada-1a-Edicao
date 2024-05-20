@@ -24,7 +24,7 @@ int main() {
 
     while (produto < 1 || produto > 10) {
         printf("Informe um item de 1 a 10: ");
-        scanf("%d", &produto);
+        scanf("%d", (int *) &produto);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
@@ -65,7 +65,7 @@ int main() {
             break;
     }
 
-    printf("- R$%.2f", preco[produto-1]);
+    printf("- R$%.2f\n", preco[produto-1]);
 
     return 0;
 }

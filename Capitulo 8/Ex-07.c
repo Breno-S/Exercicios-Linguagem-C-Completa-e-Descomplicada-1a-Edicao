@@ -72,7 +72,7 @@ int main() {
     }
 
     printf(
-        "\nMaior horario: %02hu:%02hu:%02hu",
+        "\nMaior horario: %02hu:%02hu:%02hu\n",
         hora[indice_maior_horario].horas,
         hora[indice_maior_horario].minutos,
         hora[indice_maior_horario].segundos
