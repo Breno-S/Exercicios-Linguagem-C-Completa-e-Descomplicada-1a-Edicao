@@ -23,7 +23,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (num < 0);
 
-    printf("Fatorial de %d = %llu", num, fatorial(num));
+    printf("Fatorial de %d = %llu\n", num, fatorial(num));
 
     return 0;
 }

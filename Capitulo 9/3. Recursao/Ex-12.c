@@ -35,5 +35,7 @@ int main() {
 
     imprime_em_binario(num);
 
+    printf("\n");
+
     return 0;
 }

@@ -22,7 +22,7 @@ int main() {
     printf("Informe %d valores inteiros para preencher o vetor\n\n", SIZE);
 
     for (size_t i = 0; i < SIZE; i++) {
-        printf("[%d]: ", i);
+        printf("[%zu]: ", i);
         scanf("%d", &vetor[i]);
 
         int c;
@@ -30,7 +30,7 @@ int main() {
     }
 
     printf(
-        "Menor elemento do array: %d",
+        "Menor elemento do array: %d\n",
         menor_elemento(vetor, SIZE, vetor[0])
     );
 

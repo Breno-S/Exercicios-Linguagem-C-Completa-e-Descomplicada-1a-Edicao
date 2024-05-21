@@ -30,7 +30,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (num < 0);
     
-    printf("Termo #%d da sequencia de Fibonacci: %llu", num, fibonacci(num));
+    printf("Termo #%d da sequencia de Fibonacci: %u\n", num, fibonacci(num));
 
     return 0;
 }

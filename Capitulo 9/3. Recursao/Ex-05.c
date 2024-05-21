@@ -27,14 +27,14 @@ int main() {
     printf("Informe os valores para o vetor de %d inteiros:\n\n", SIZE);
 
     for (size_t i = 0; i < SIZE; i++) {
-        printf("[%d]: ", i);
+        printf("[%zu]: ", i);
         scanf("%d", &vetor[i]);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 
-    printf("\nSoma dos valores do array: %d", soma_array(vetor, 10));
+    printf("\nSoma dos valores do array: %lld\n", soma_array(vetor, 10));
 
     return 0;
 }

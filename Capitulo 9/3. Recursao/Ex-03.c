@@ -32,5 +32,7 @@ int main() {
 
     print_naturais_ate_n(num);
 
+    printf("\n");
+
     return 0;
 }

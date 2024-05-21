@@ -32,5 +32,7 @@ int main() {
 
     print_naturais_ate_zero(num);
 
+    printf("\n");
+
     return 0;
 }

@@ -25,7 +25,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (num <= 0);
 
-    printf("\nS com n valendo %d: %f", num, serie_s(num));
+    printf("\nS com n valendo %d: %f\n", num, serie_s(num));
 
     return 0;
 }

@@ -33,7 +33,7 @@ int main() {
     printf("Informe o expoente: ");
     scanf("%d", &exp);
 
-    printf("%d ^ %d = %d", base, exp, potenciacao(base,exp));
+    printf("%d ^ %d = %d\n", base, exp, potenciacao(base,exp));
 
     return 0;
 }

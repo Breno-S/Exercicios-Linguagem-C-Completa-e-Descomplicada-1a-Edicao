@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-    printf("Soma dos %u primeiros cubos: %llu", num, n_primeiros_cubos(num));
+    printf("Soma dos %u primeiros cubos: %llu\n", num, n_primeiros_cubos(num));
 
     return 0;
 }

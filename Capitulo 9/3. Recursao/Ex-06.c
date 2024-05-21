@@ -19,14 +19,14 @@ int main() {
 
     printf("Informe os valores do array de %d inteiros:\n\n", SIZE);
     for (size_t i = 0; i < 10; i++) {
-        printf("[%d]: ", i);
+        printf("[%zu]: ", i);
         scanf("%d", &vetor[i]);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 
-    printf("\nMedia dos valores do array: %f", media_array(vetor, 10, 10));
+    printf("\nMedia dos valores do array: %f\n", media_array(vetor, 10, 10));
 
     return 0;
 }

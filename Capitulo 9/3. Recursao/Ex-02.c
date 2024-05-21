@@ -22,7 +22,7 @@ int main() {
     scanf("%d", &num);
 
     printf(
-        "Somatorio de %d ate %d: %lld",
+        "Somatorio de %d ate %d: %lld\n",
         (num < 1) ? num : 1,
         (num < 1) ? 1 : num,
         somatorio(num)

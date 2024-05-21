@@ -26,7 +26,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (num <= 0);
 
-    printf("Hn de %d: %f", num, harmonico(num));
+    printf("Hn de %d: %f\n", num, harmonico(num));
 
     return 0;
 }

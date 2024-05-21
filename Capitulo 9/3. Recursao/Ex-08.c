@@ -33,7 +33,7 @@ int main() {
     printf("Informe o segundo fator da multiplicacao: ");
     scanf("%d", &fator2);
 
-    printf("%d * %d = %d", fator1, fator2, multiplicacao(fator1, fator2));
+    printf("%d * %d = %d\n", fator1, fator2, multiplicacao(fator1, fator2));
 
     return 0;
 }

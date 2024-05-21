@@ -31,7 +31,7 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     } while (num < 0);
 
-    printf("Numero invertido: %d", invertido(num));
+    printf("Numero invertido: %d\n", invertido(num));
     
     return 0;
 }
