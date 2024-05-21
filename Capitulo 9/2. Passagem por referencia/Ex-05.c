@@ -33,12 +33,12 @@ int main() {
     printf("Informe a amostra para calcular seu desvio padrao\n\n");
 
     for (size_t i = 0; i < N; i++) {
-        printf("[%d]: ", i);
+        printf("[%zu]: ", i);
         scanf("%lf", &amostra[i]);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 
-    printf("\nDesvio Padrao: %lf ", desvio_padrao(amostra, N));
+    printf("\nDesvio Padrao: %lf\n", desvio_padrao(amostra, N));
 }

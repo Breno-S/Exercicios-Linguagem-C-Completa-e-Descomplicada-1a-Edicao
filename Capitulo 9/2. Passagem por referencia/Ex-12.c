@@ -36,7 +36,7 @@ int main() {
     soma_par_impar(vetor, SIZE, &soma_pares, &soma_impares);
 
     printf("\nSoma dos valores pares: %d", soma_pares);
-    printf("\nSoma dos valores impares: %d", soma_impares);
+    printf("\nSoma dos valores impares: %d\n", soma_impares);
 
     return 0;
 }

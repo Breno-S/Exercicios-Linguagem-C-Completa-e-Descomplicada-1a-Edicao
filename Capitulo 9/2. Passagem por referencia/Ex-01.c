@@ -21,7 +21,7 @@ int main() {
 
     printf("Numero = %f\n", numero_real);
     printf("Parte inteira = %d\n", pt_inteira);
-    printf("Parte fracionaria = %f", pt_fracionaria);
+    printf("Parte fracionaria = %f\n", pt_fracionaria);
     
     return 0;
 }

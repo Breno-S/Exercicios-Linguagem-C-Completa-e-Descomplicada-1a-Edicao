@@ -49,9 +49,11 @@ int main() {
 
     ordenar_array(vetor, SIZE);
 
-    printf("Vetor ordenado em ordem crescente: ");
+    printf("\nVetor ordenado em ordem crescente: ");
 
     printar_array(vetor, SIZE);
     
+    printf("\n");
+
     return 0;
 }

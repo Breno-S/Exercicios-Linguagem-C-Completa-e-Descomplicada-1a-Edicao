@@ -35,7 +35,7 @@ int main() {
     somas_diagonais(matriz, &soma_principal, &soma_secundaria);
 
     printf("\nSoma dos elementos da diagonal principal: %d", soma_principal);
-    printf("\nSoma dos elementos da diagonal secundaria: %d", soma_secundaria);
+    printf("\nSoma dos elementos da diagonal secundaria: %d\n", soma_secundaria);
     
     return 0;
 }

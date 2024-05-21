@@ -19,14 +19,14 @@ int main() {
     printf("Informe 10 valores para preencher o array\n\n");
 
     for (size_t i = 0; i < 10; i++) {
-        printf("#%d: ", i+1);
+        printf("#%zu: ", i+1);
         scanf("%d", &array[i]);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 
-    printf("Soma dos elementos do array: %d", soma_array(array, 10));
+    printf("\nSoma dos elementos do array: %d\n", soma_array(array, 10));
 
     return 0;
 }

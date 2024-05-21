@@ -35,7 +35,7 @@ int main() {
         }
     }
 
-    printf("\nSoma dos elementos da matriz = %d", soma_matriz(matriz));
+    printf("\nSoma dos elementos da matriz = %d\n", soma_matriz(matriz));
 
     return 0;
 }

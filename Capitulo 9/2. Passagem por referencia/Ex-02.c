@@ -23,7 +23,7 @@ int main() {
     calcula_V_A_esfera(raio, &volume, &area);
 
     printf("\n\tVolume: %lf", volume);
-    printf("\n\tArea: %lf", area);
+    printf("\n\tArea: %lf\n", area);
 
     return 0;
 }

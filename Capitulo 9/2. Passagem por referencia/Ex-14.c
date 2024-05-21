@@ -57,16 +57,16 @@ int main() {
 
     switch (calcular_raizes(a, b, c, &raiz1, &raiz2)) {
         case -1:
-            printf("\nNao e equacao de segundo grau.");
+            printf("\nNao e equacao de segundo grau.\n");
             break;
         case 0:
-            printf("\nA equacao nao possui raiz");
+            printf("\nA equacao nao possui raiz\n");
             break;
         case 1:
-            printf("\nS = {%lf}", raiz1);
+            printf("\nS = {%lf}\n", raiz1);
             break;
         case 2:
-            printf("\nS = {%lf, %lf}", raiz1, raiz2);
+            printf("\nS = {%lf, %lf}\n", raiz1, raiz2);
             break;
         default:
             break;

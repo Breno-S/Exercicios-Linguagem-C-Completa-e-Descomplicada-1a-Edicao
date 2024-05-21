@@ -21,14 +21,14 @@ int main() {
     printf("Informe as notas dos 10 alunos\n\n");
 
     for (size_t i = 0; i < 10; i++) {
-        printf("#%d: ", i+1);
+        printf("#%zu: ", i+1);
         scanf("%d", &array[i]);
 
         int c;
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 
-    printf("Media: %.2f", media_array(array, 10));
+    printf("\nMedia: %.2f\n", media_array(array, 10));
 
     return 0;
 }

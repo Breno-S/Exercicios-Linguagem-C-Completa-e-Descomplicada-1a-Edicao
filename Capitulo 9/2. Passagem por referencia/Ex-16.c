@@ -40,7 +40,7 @@ int main() {
     count_maior = num_ocorrencias_maior(vetor, SIZE, &maior_elemento);
 
     printf("\nMaior elemento do vetor: %d", maior_elemento);
-    printf("\nNumero de ocorrencias do elemento: %d", count_maior);
+    printf("\nNumero de ocorrencias do elemento: %d\n", count_maior);
 
     return 0;
 }

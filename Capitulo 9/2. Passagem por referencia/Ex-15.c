@@ -38,7 +38,7 @@ int main() {
     maior_menor_array(vetor, SIZE, &maior_elemento, &menor_elemento);
 
     printf("\nMaior elemento do array: %d", maior_elemento);
-    printf("\nMenor elemento do array: %d", menor_elemento);
+    printf("\nMenor elemento do array: %d\n", menor_elemento);
 
     return 0;
 }
