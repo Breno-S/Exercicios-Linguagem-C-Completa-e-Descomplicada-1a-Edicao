@@ -21,14 +21,14 @@ int main() {
     matriz = malloc(sizeof *matriz * N);
 
     if (matriz == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
     matriz[0] = malloc(sizeof **matriz * N * N);
 
     if (matriz[0] == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 

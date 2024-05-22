@@ -57,12 +57,12 @@ int main() {
 
     // Alocação da matriz A
     if ((matriz1 = calloc(linhas1, sizeof *matriz1)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
     if ((matriz1[0] = calloc(linhas1 * colunas1, sizeof **matriz1)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -72,12 +72,12 @@ int main() {
 
     // Alocação da matriz B
     if ((matriz2 = calloc(linhas2, sizeof *matriz2)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
     if ((matriz2[0] = calloc(linhas2 * colunas2, sizeof **matriz2)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -115,7 +115,7 @@ int main() {
     );
 
     if (matriz_produto == NULL) {
-        printf("Erro ao calcular o produto");
+        printf("Erro ao calcular o produto\n");
         return 2;
     }
 

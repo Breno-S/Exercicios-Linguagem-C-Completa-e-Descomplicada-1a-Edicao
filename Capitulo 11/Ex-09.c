@@ -20,11 +20,11 @@ int main() {
     string_invertida = str_invertida(string, BUFF_SIZE);
 
     if (string_invertida == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
-    printf("String invertida: %s", string_invertida);
+    printf("String invertida: %s\n", string_invertida);
 
     free(string_invertida);
     string_invertida = NULL;

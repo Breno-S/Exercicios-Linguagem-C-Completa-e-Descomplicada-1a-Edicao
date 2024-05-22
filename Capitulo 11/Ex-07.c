@@ -33,7 +33,7 @@ int main() {
     vetor = heap_array_int(tamanho);
 
     if (vetor == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 

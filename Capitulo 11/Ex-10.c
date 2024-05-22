@@ -40,7 +40,7 @@ int main() {
     vetor = heap_vetor_int_fill(tamanho, valor);
 
     if (vetor == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -48,6 +48,8 @@ int main() {
     for (int i = 0; i < tamanho; i++) {
         printf("%d ", vetor[i]);
     }
+
+    printf("\n");
 
     free(vetor);
     vetor = NULL;

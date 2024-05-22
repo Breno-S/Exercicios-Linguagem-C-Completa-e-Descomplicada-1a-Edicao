@@ -41,7 +41,7 @@ int main() {
          tamanho = 0;
 
     while (tamanho <= 0) {
-        printf("Informe o tamanho dos matriz quadrada e do vetor: ");
+        printf("Informe o tamanho da matriz quadrada e do vetor: ");
         scanf("%d", &tamanho);
 
         int c;
@@ -50,12 +50,12 @@ int main() {
 
     // Alocação da matriz
     if ((matriz = calloc(tamanho, sizeof *matriz)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
     if ((matriz[0] = calloc(tamanho * tamanho, sizeof **matriz)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -65,7 +65,7 @@ int main() {
 
     // Alocação do vetor
     if ((vetor = calloc(tamanho, sizeof *vetor)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 

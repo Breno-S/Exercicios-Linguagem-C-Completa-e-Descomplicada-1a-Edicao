@@ -5,10 +5,10 @@ ocupa na memória: char, int, float, double. */
 
 int main() {
     printf("Tamanho de cada tipo primitivo em bytes:\n\n");
-    printf("char: %llu\n", sizeof(char));
-    printf("int: %llu\n", sizeof(int));
-    printf("float: %llu\n", sizeof(float));
-    printf("double: %llu\n", sizeof(double));
+    printf("char: %zu\n", sizeof(char));
+    printf("int: %zu\n", sizeof(int));
+    printf("float: %zu\n", sizeof(float));
+    printf("double: %zu\n", sizeof(double));
 
     return 0;
 }

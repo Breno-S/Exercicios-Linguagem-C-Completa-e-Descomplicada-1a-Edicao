@@ -34,20 +34,20 @@ int main() {
     vetor1 = calloc(tamanho, sizeof *vetor1);
 
     if (vetor1 == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
     vetor2 = calloc(tamanho, sizeof *vetor2);
 
     if (vetor2 == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
     printf("\nInforme os valores do vetor A:\n\n");
 
-    for (int i; i < tamanho; i++) {
+    for (int i = 0; i < tamanho; i++) {
         printf("[%d]: ", i);
         scanf("%d", &vetor1[i]);
 
@@ -57,7 +57,7 @@ int main() {
 
     printf("\nInforme os valores do vetor B:\n\n");
 
-    for (int i; i < tamanho; i++) {
+    for (int i = 0; i < tamanho; i++) {
         printf("[%d]: ", i);
         scanf("%d", &vetor2[i]);
 
@@ -68,7 +68,7 @@ int main() {
     vetor_soma = soma_vetores(vetor1, vetor2, tamanho);
 
     if (vetor_soma == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -77,6 +77,8 @@ int main() {
     for (int i = 0; i < tamanho; i++) {
         printf("%d ", vetor_soma[i]);
     }
+
+    printf("\n");
 
     free(vetor1);
     vetor1 = NULL;

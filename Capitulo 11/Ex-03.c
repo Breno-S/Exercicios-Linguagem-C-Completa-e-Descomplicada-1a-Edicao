@@ -35,7 +35,7 @@ int main() {
     cadastros = cadastrar(num);
 
     if (cadastros == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 

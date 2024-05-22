@@ -43,12 +43,12 @@ int main() {
 
     // Alocação da matriz
     if ((matriz = calloc(tamanho, sizeof *matriz)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
     if ((matriz[0] = calloc(tamanho * tamanho, sizeof **matriz)) == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -69,13 +69,18 @@ int main() {
         }
     }
 
-    soma_colunas = matriz_soma_coluna(*matriz, tamanho);
+    if ((soma_colunas = matriz_soma_coluna(*matriz, tamanho)) == NULL) {
+        printf("\nErro ao somar as colunas da matriz\n");
+        return 2;
+    }
 
     printf("\nResultado da soma das colunas da matriz: ");
 
     for (int i = 0; i < tamanho; i++) {
         printf("%d ", soma_colunas[i]);
     }
+
+    printf("\n");
 
     free(matriz[0]);
     free(matriz);

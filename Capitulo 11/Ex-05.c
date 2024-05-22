@@ -22,7 +22,7 @@ int main() {
     V = calloc(N, sizeof *V);
 
     if (V == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -43,6 +43,8 @@ int main() {
     for (int i = 0; i < N; i++) {
         printf("%d ", V[i]);
     }
+
+    printf("\n");
 
     free(V);
     V = NULL;

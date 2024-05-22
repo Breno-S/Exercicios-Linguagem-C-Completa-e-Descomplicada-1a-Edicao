@@ -5,7 +5,7 @@ caso contrário. */
 
 /*
 Existem diversos meios de alocar dinamicamente uma matriz. Optei pela terceira
-opção descrita no livro, com uma alteração: utiliza-se apenas um variável, do
+opção descrita no livro, com uma alteração: utiliza-se apenas uma variável, do
 tipo `int **`.
 
 Se ignorarmos VLAs, que foram adicionados do padrão C99, esta é a melhor opção
@@ -54,20 +54,21 @@ int main() {
         while ((c = getchar()) != '\n' && c != EOF) {}
     }
 
-    // `matriz` aponta para um array de três ponteiros para int.
+    // `matriz` aponta para um array de ponteiros para int cujo número de
+    // elementos é igual ao numero de linhas da matriz.
     matriz = malloc(sizeof *matriz * linhas);
 
     if (matriz == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
     
     // O primeiro ponteiro do array aponta para a porção de memória alocada para
-    // armazenar toda a matriz
+    // armazenar toda a matriz (primeiro elemento da matriz, primeira linha)
     matriz[0] = malloc(sizeof **matriz * linhas * colunas);
 
     if (matriz[0] == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
@@ -89,9 +90,9 @@ int main() {
     scanf("%d", &valor);
 
     if (valor_na_matriz(*matriz, linhas, colunas, valor)) {
-        printf("\n%d foi encontrado na matriz", valor);
+        printf("\n%d foi encontrado na matriz\n", valor);
     } else {
-        printf("\n%d nao foi encontrado", valor);
+        printf("\n%d nao foi encontrado\n", valor);
     }
 
     // Liberar o bloco de memória da matriz e liberar o array de ponteiros

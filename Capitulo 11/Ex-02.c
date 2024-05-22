@@ -28,7 +28,7 @@ int main() {
         "}"
     );
 
-    printf("\n\nTamanho em bytes (sizeof): %d", sizeof(struct Aluno));
+    printf("\n\nTamanho em bytes (sizeof): %zu\n", sizeof(struct Aluno));
 
     return 0;
 }

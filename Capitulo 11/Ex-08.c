@@ -25,7 +25,7 @@ int main() {
     vetor = heap_vetor_int(tamanho);
 
     if (vetor == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
     }
 
     free(vetor);

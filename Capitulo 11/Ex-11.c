@@ -30,7 +30,7 @@ int main() {
     matriz = heap_matriz_quad_int(tamanho);
 
     if (matriz == NULL) {
-        printf("\nErro: memoria insuficiente");
+        printf("\nErro: memoria insuficiente\n");
         return 1;
     }
 
