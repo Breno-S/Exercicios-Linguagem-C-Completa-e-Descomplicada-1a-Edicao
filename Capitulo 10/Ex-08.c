@@ -28,7 +28,7 @@ int main() {
         printf("%d, ", *(vetor + i));
     }
 
-    printf("%d}", *(vetor + 9));
+    printf("%d}\n", *(vetor + 9));
     
     return 0;
 }

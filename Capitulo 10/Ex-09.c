@@ -14,5 +14,7 @@ int main() {
 
     print_array(vetor, 10);
 
+    printf("\n");
+
     return 0;
 }

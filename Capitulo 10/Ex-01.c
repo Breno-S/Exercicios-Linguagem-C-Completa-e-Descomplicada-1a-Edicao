@@ -18,7 +18,7 @@ int main() {
     printf("Endereco da primeira variavel:\t0x%X\n", &var1);
     printf("Endereco da segunda variavel:\t0x%X\n", &var2);
 
-    printf("\nMaior endereco: 0x%X", maior_endereco);
+    printf("\nMaior endereco: 0x%X\n", maior_endereco);
 
     return 0;
 }

@@ -6,7 +6,7 @@ Imprima o endereço de cada posição desse array. */
 int main() {
     float array[10];
 
-    for (size_t i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++) {
         printf("Endereco [%d]: 0x%X\n", i, &array[i]);
     }
     

@@ -17,7 +17,7 @@ int main() {
     printf("Informe o valor da segunda variavel: ");
     scanf("%d", &var2);
 
-    printf("\nConteudo do maior endereco: %d", *maior_endereco);
+    printf("\nConteudo do maior endereco: %d\n", *maior_endereco);
 
     return 0;
 }

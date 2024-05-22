@@ -9,7 +9,7 @@ int main() {
 
     printf("Informe os valores para o array de 5 posicoes\n\n");
 
-    for (size_t i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {
         printf("[%d]: ", i);
         scanf("%d", (array+i));
 
@@ -22,6 +22,8 @@ int main() {
     for (size_t i = 0; i < 5; i++) {
         printf("%d ", *(array+i) * 2);
     }
+
+    printf("\n");
 
     return 0;
 }

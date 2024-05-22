@@ -26,9 +26,9 @@ int main() {
     retira_newline(string2);
 
     if (str_match(string1, string2)) {
-        printf("\nA segunda string ocorre na primeira!");
+        printf("\nA segunda string ocorre na primeira!\n");
     } else {
-        printf("\nA segunda string nao foi encontrada na primeira");
+        printf("\nA segunda string nao foi encontrada na primeira\n");
     }
 
     return 0;
