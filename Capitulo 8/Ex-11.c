@@ -82,7 +82,7 @@ int main() {
                 case 10:
                 case 12:
                     if (data[i].dia > 31) {
-                            printf("Data invalida.\n");
+                        printf("Data invalida.\n");
                     } else {
                         data_valida = 1;
                     } 
