@@ -10,7 +10,7 @@ Essa matriz deve conter o valor 1 na diagonal principal e 0 nas demais posiçõe
 int **heap_matriz_quad_int(unsigned N);
 
 // Preenche a diagonal principal de uma matriz quadrada com 1 e zera o restante.
-void diagonal_secundaria_fill(int *matriz, unsigned N);
+void diagonal_principal_fill(int *matriz, unsigned N);
 
 // Libera a memória alocada pela função `heap_matriz_quad_int()`.
 void free_matriz(int **matriz);
@@ -54,7 +54,7 @@ int **heap_matriz_quad_int(unsigned N) {
     matriz = malloc(sizeof *matriz * N);
 
     if (matriz != NULL) {
-        matriz[0] = malloc(sizeof *matriz * N * N);
+        matriz[0] = malloc(sizeof **matriz * N * N);
 
         if (matriz[0] != NULL) {
             for (size_t i = 1; i < N; i++) {
@@ -62,13 +62,13 @@ int **heap_matriz_quad_int(unsigned N) {
             }
         }
 
-        diagonal_secundaria_fill(*matriz, N);
+        diagonal_principal_fill(*matriz, N);
     }
 
     return matriz;
 }
 
-void diagonal_secundaria_fill(int *matriz, unsigned N) {
+void diagonal_principal_fill(int *matriz, unsigned N) {
     for (unsigned i = 0; i < N; i++) {
         for (unsigned j = 0; j < N; j++) {
             if (i == j) {

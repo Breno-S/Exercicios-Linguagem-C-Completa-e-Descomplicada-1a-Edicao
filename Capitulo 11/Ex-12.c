@@ -54,7 +54,7 @@ int **heap_matriz_quad_int(unsigned N) {
     matriz = malloc(sizeof *matriz * N);
 
     if (matriz != NULL) {
-        matriz[0] = malloc(sizeof *matriz * N * N);
+        matriz[0] = malloc(sizeof **matriz * N * N);
 
         if (matriz[0] != NULL) {
             for (size_t i = 1; i < N; i++) {
