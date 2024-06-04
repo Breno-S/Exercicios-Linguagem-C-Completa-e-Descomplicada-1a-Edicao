@@ -15,7 +15,7 @@ struct Atleta {
 };
 
 int main() {
-    struct Atleta atleta[5] = { 0 };
+    struct Atleta atleta[QTD_ATLETAS] = { 0 };
     
     int c;
 
