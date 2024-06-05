@@ -7,7 +7,7 @@ int main() {
     float array[10];
 
     for (int i = 0; i < 10; i++) {
-        printf("Endereco [%d]: 0x%X\n", i, &array[i]);
+        printf("Endereco [%d]: %p\n", i, &array[i]);
     }
     
     return 0;

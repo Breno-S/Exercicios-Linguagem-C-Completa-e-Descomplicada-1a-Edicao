@@ -21,7 +21,7 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         if (*(array+i) % 2 == 0) {
-            printf("0x%X - [%d]: %d\n", (array+i), i, *(array+i));
+            printf("%p - [%d]: %d\n", (array+i), i, *(array+i));
         }
     }
 

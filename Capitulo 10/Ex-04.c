@@ -8,7 +8,7 @@ int main() {
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            printf("Endereco [%d][%d]: 0x%X\n", i, j, &matriz[i][j]);
+            printf("Endereco [%d][%d]: %p\n", i, j, &matriz[i][j]);
         }
     }
     

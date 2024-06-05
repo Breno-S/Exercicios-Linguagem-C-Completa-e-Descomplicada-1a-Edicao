@@ -3,7 +3,7 @@ a segunda string ocorre dentro da primeira. Use aritmética de ponteiros para
 acessar os caracteres das strings. */
 
 /*
-Semelhante ao exercício 8 do Capítulo 7. Esta função assume que as strings
+Semelhante ao exercício 8 do Capítulo 7. Estas funções assumem que as strings
 passadas como argumento serão terminadas por '\0'. No mundo real este nem sempre
 é o caso.
 */
@@ -11,8 +11,12 @@ passadas como argumento serão terminadas por '\0'. No mundo real este nem sempr
 #include <stdio.h>
 #include <stdbool.h>
 
-bool str_match(const char *, const char *);
-void retira_newline(char *);
+/* Retorna 1 se `str` estiver presente em `text`.
+Retorna 0 caso contrário.  */
+bool str_match(const char *text, const char *str);
+
+// Retira, se houver, o caractere '\n' do final da string `str`.
+void retira_newline(char *str);
 
 int main() {
     char string1[64], string2[64];
@@ -86,9 +90,11 @@ bool str_match(const char *text, const char *str) {
 }
 
 void retira_newline(char *str) {
-    for (size_t i = 0; *(str + i) != '\0'; i++) {
-        if (*(str + i) == '\n') {
-            *(str + i) = '\0';
-        }
+    size_t len;
+
+    for (len = 0; *(str + len) != '\0'; len++);
+
+    if (*(str + len - 1) == '\n') {
+        *(str + len - 1) = '\0';
     }
 }

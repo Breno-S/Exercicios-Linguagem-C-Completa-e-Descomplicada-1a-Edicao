@@ -15,10 +15,10 @@ int main() {
 
     int *maior_endereco = (&var1 > &var2) ? &var1 : &var2;
 
-    printf("Endereco da primeira variavel:\t0x%X\n", &var1);
-    printf("Endereco da segunda variavel:\t0x%X\n", &var2);
+    printf("Endereco da primeira variavel:\t%p\n", &var1);
+    printf("Endereco da segunda variavel:\t%p\n", &var2);
 
-    printf("\nMaior endereco: 0x%X\n", maior_endereco);
+    printf("\nMaior endereco: %p\n", maior_endereco);
 
     return 0;
 }
