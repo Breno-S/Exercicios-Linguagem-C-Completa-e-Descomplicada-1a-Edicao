@@ -184,6 +184,4 @@ int **produto_matrizes(int *A, size_t A_lin, size_t A_col,
 void free_matriz(int **matriz) {
     free(matriz[0]);
     free(matriz);
-
-    matriz = NULL;
 }

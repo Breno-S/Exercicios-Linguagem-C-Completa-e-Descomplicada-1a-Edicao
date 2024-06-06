@@ -44,6 +44,7 @@ int main() {
     }
 
     free_matriz(matriz);
+    matriz = NULL;
 
     return 0;
 }
@@ -83,6 +84,4 @@ void diagonal_secundaria_fill(int *matriz, unsigned N) {
 void free_matriz(int **matriz) {
     free(matriz[0]);
     free(matriz);
-
-    matriz = NULL;
 }
