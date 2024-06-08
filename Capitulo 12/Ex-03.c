@@ -48,7 +48,7 @@ int main() {
         fputc((c >= 97 && c <= 122) ? c -= 32 : c, fp_escrita);
     }
 
-    printf("Conteúdo salvo com sucesso.\n");
+    printf("Conteudo salvo com sucesso.\n");
 
     fclose(fp_leitura);
     fclose(fp_escrita);
