@@ -1,15 +1,15 @@
 # Exercícios - Linguagem C Completa e Descomplicada, 1ª Edição 
 
-O propósito deste repositório é servir de consulta e inspiração àqueles que estiverem aprendendo C e encontrarem-se presos em algum exercício do livro. 
+Este repositório foi criado inicialmente com o intuito de registrar minhas soluções. Entretanto, conforme fui dedicando mais tempo (por vezes até em excesso) para escrever bons algoritmos, percebi que seria uma boa ideia completar o livro e tornar o repositório público. Assim, ele poderá servir de consulta e inspiração àqueles que estiverem aprendendo C e se encontrarem presos em algum exercício. 
 
-Os códigos seguem um estilo padrão (linhas de operações distintas são separadas, `else` é evitado, código é comentado e reutilizado etc.), entretanto, em algumas ocasiões a formatação foge do padrão para tornar o código mais claro. 
+No geral, os códigos seguem um estilo padrão, com pequenas alterações na formatação, visando maior clareza. Arrays de comprimento variável (VLAs) não foram utilizados porque além de ser desencorajado por diversas fontes, seu uso não elucida os conceitos de stack, heap e alocação dinâmica de memória.
 
-VLAs foram evitados, pois para quem não entende o funcionamento da alocação de memória ou a diferença entre stack e heap eles podem ser fontes de confusão — muitas fontes não recomendam VLAs por diversos motivos. 
+Para diminuir possíveis confusões com os conceitos da linguagem C (e com o próprio código), alguns exercícios possuem um comentário prévio com informações pertinentes ao assunto do exercício ou detalhes do algoritmo. 
 
-Para diminuir essa possível confusão com os conceitos da linguagem C (ou com o próprio código), certos exercícios possuem um comentário prévio, com informações relacionadas ao assunto do exercício ou aos detalhes presentes no algoritmo. 
+Por fim, todos os exercícios envolvendo arquivos foram testados tanto no Windows quanto no Linux para garantir portabilidade.
 
-Tenho certeza de que um bug ou outro habitam esse repositório, então se você os encontrar, sinta-se à vontade para apontá-los. 
+Tenho certeza de que um bug ou outro habita este repositório, então, se você os encontrar, sinta-se à vontade para apontar ou corrigi-los.
 
-Também vale a pena checar outros repositórios com soluções para esses exercícios. Assim você descobre diferentes maneiras de se resolver um problema, quais são os algoritmos mais consagrados e os pros e contras de cada um.
+Recomendo também checar outros repositórios com soluções para esses exercícios. Dessa forma, você descobre diferentes maneiras de se resolver um problema, quais os algoritmos mais consagrados e os prós e contras de cada um.
 
 Bons estudos!
